@@ -1,0 +1,3987 @@
+<div class='container' style="padding-top:100px;">
+  <% @plants.each do |plant| %>
+  <%= link_to plant.nom_scientifique, plant_path(plant) %>
+  <% end %>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th class="id-cell">id</th>
+      <th class="nom-cell">nom</th>
+      <th class="plants-cell">plants</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="firstRow">
+      <td class="id-cell">1</td>
+      <td class="nom-cell">abcessos</td>
+      <td class="plants-cell">360 508 285</td>
+    </tr>
+    <tr>
+      <td class="id-cell">2</td>
+      <td class="nom-cell">abortiva</td>
+      <td class="plants-cell">162 372 429 477 497 118</td>
+    </tr>
+    <tr>
+      <td class="id-cell">3</td>
+      <td class="nom-cell">Acidente vascular cerebral</td>
+      <td class="plants-cell">413</td>
+    </tr>
+    <tr>
+      <td class="id-cell">4</td>
+      <td class="nom-cell">Acido urico</td>
+      <td class="plants-cell">414 305</td>
+    </tr>
+    <tr>
+      <td class="id-cell">5</td>
+      <td class="nom-cell">acnes</td>
+      <td class="plants-cell">117 126 196 197 225 337 427 470 473 475 523 530 56</td>
+    </tr>
+    <tr>
+      <td class="id-cell">6</td>
+      <td class="nom-cell">adstringente</td>
+      <td class="plants-cell">46 56 61 65 67 156 167 174 175 182 202 212 214 222 236 254 257 278 284 291 297 335 371 372 399 407 441 470 482 483 485 522 537 33</td>
+    </tr>
+    <tr>
+      <td class="id-cell">7</td>
+      <td class="nom-cell">Adstringente contra disenteria</td>
+      <td class="plants-cell">481</td>
+    </tr>
+    <tr>
+      <td class="id-cell">8</td>
+      <td class="nom-cell">aerofagia</td>
+      <td class="plants-cell">337</td>
+    </tr>
+    <tr>
+      <td class="id-cell">9</td>
+      <td class="nom-cell">afeccoes</td>
+      <td class="plants-cell">196</td>
+    </tr>
+    <tr>
+      <td class="id-cell">10</td>
+      <td class="nom-cell">Afeccoes bexiga</td>
+      <td class="plants-cell">33</td>
+    </tr>
+    <tr>
+      <td class="id-cell">11</td>
+      <td class="nom-cell">Afeccoes bucais</td>
+      <td class="plants-cell">418</td>
+    </tr>
+    <tr>
+      <td class="id-cell">12</td>
+      <td class="nom-cell">Afeccoes catarrais</td>
+      <td class="plants-cell">487</td>
+    </tr>
+    <tr>
+      <td class="id-cell">13</td>
+      <td class="nom-cell">Afeccoes cutaneas</td>
+      <td class="plants-cell">59 75</td>
+    </tr>
+    <tr>
+      <td class="id-cell">14</td>
+      <td class="nom-cell">Afeccoes da boca</td>
+      <td class="plants-cell">513 360</td>
+    </tr>
+    <tr>
+      <td class="id-cell">15</td>
+      <td class="nom-cell">Afeccoes da garganta</td>
+      <td class="plants-cell">42 56 360</td>
+    </tr>
+    <tr>
+      <td class="id-cell">16</td>
+      <td class="nom-cell">Afeccoes da mucosa bucal</td>
+      <td class="plants-cell">198</td>
+    </tr>
+    <tr>
+      <td class="id-cell">17</td>
+      <td class="nom-cell">Afeccoes da pele</td>
+      <td class="plants-cell">58 163 166 197 216 260 265 360 427 510 532</td>
+    </tr>
+    <tr>
+      <td class="id-cell">18</td>
+      <td class="nom-cell">Afeccoes da pele do rosto</td>
+      <td class="plants-cell">163</td>
+    </tr>
+    <tr>
+      <td class="id-cell">19</td>
+      <td class="nom-cell">Afeccoes da vesicula</td>
+      <td class="plants-cell">419</td>
+    </tr>
+    <tr>
+      <td class="id-cell">20</td>
+      <td class="nom-cell">Afeccoes das vias respiratorias</td>
+      <td class="plants-cell">197 203 423</td>
+    </tr>
+    <tr>
+      <td class="id-cell">21</td>
+      <td class="nom-cell">Afecções das vias urinarias</td>
+      <td class="plants-cell">158 441 488</td>
+    </tr>
+    <tr>
+      <td class="id-cell">22</td>
+      <td class="nom-cell">Afeccoes da pele</td>
+      <td class="plants-cell">445 117</td>
+    </tr>
+    <tr>
+      <td class="id-cell">23</td>
+      <td class="nom-cell">Afeccoes do baço</td>
+      <td class="plants-cell">419 102</td>
+    </tr>
+    <tr>
+      <td class="id-cell">24</td>
+      <td class="nom-cell">Afeccoes do couro cabeludo</td>
+      <td class="plants-cell">475 473</td>
+    </tr>
+    <tr>
+      <td class="id-cell">25</td>
+      <td class="nom-cell">afeccoes dos bronquios</td>
+      <td class="plants-cell">419 515</td>
+    </tr>
+    <tr>
+      <td class="id-cell">26</td>
+      <td class="nom-cell">Afeccoes dos rins</td>
+      <td class="plants-cell">33</td>
+    </tr>
+    <tr>
+      <td class="id-cell">27</td>
+      <td class="nom-cell">Afeccoes escorbuticas</td>
+      <td class="plants-cell">196</td>
+    </tr>
+    <tr>
+      <td class="id-cell">28</td>
+      <td class="nom-cell">Afeccoes estomacais</td>
+      <td class="plants-cell">122</td>
+    </tr>
+    <tr>
+      <td class="id-cell">29</td>
+      <td class="nom-cell">Afeccoes febris</td>
+      <td class="plants-cell">107</td>
+    </tr>
+    <tr>
+      <td class="id-cell">30</td>
+      <td class="nom-cell">Afeccoes gastricas</td>
+      <td class="plants-cell">117 192 102</td>
+    </tr>
+    <tr>
+      <td class="id-cell">31</td>
+      <td class="nom-cell">Afeccoes hepaticas</td>
+      <td class="plants-cell">102 122 126</td>
+    </tr>
+    <tr>
+      <td class="id-cell">32</td>
+      <td class="nom-cell">Afeccoes intestinais</td>
+      <td class="plants-cell">122</td>
+    </tr>
+    <tr>
+      <td class="id-cell">33</td>
+      <td class="nom-cell">Afeccoes parasitarias</td>
+      <td class="plants-cell">216</td>
+    </tr>
+    <tr>
+      <td class="id-cell">33</td>
+      <td class="nom-cell">Afeccoes pulmonares</td>
+      <td class="plants-cell">196 366 519 543</td>
+    </tr>
+    <tr>
+      <td class="id-cell">35</td>
+      <td class="nom-cell">Afeccoes renais</td>
+      <td class="plants-cell">102 42</td>
+    </tr>
+    <tr>
+      <td class="id-cell">36</td>
+      <td class="nom-cell">Afeccoes respiratorias</td>
+      <td class="plants-cell">170 177</td>
+    </tr>
+    <tr>
+      <td class="id-cell">37</td>
+      <td class="nom-cell">Afeccoes reumaticas</td>
+      <td class="plants-cell">294</td>
+    </tr>
+    <tr>
+      <td class="id-cell">38</td>
+      <td class="nom-cell">Afeccoes uretrais</td>
+      <td class="plants-cell">510</td>
+    </tr>
+    <tr>
+      <td class="id-cell">39</td>
+      <td class="nom-cell">Afeccoes vaginais</td>
+      <td class="plants-cell">350</td>
+    </tr>
+    <tr>
+      <td class="id-cell">40</td>
+      <td class="nom-cell">Afrodisiaco</td>
+      <td class="plants-cell">52 71 72 168 180 217 236 274 379 398 421 522 37</td>
+    </tr>
+    <tr>
+      <td class="id-cell">41</td>
+      <td class="nom-cell">Aftas</td>
+      <td class="plants-cell">184 65 196 198 297 332 383</td>
+    </tr>
+    <tr>
+      <td class="id-cell">42</td>
+      <td class="nom-cell">aftosa</td>
+      <td class="plants-cell">124</td>
+    </tr>
+    <tr>
+      <td class="id-cell">43</td>
+      <td class="nom-cell">Agitacao psciomotora</td>
+      <td class="plants-cell">281</td>
+    </tr>
+    <tr>
+      <td class="id-cell">44</td>
+      <td class="nom-cell">Albuminura</td>
+      <td class="plants-cell">174</td>
+    </tr>
+    <tr>
+      <td class="id-cell">45</td>
+      <td class="nom-cell">alcoolismo</td>
+      <td class="plants-cell">452 229</td>
+    </tr>
+    <tr>
+      <td class="id-cell">46</td>
+      <td class="nom-cell">alergias</td>
+      <td class="plants-cell">513 175</td>
+    </tr>
+    <tr>
+      <td class="id-cell">47</td>
+      <td class="nom-cell">Alivio da inflamacao</td>
+      <td class="plants-cell">127</td>
+    </tr>
+    <tr>
+      <td class="id-cell">48</td>
+      <td class="nom-cell">alucinogena</td>
+      <td class="plants-cell">502 352</td>
+    </tr>
+    <tr>
+      <td class="id-cell">49</td>
+      <td class="nom-cell">Amebiase</td>
+      <td class="plants-cell">300</td>
+    </tr>
+    <tr>
+      <td class="id-cell">50</td>
+      <td class="nom-cell">Amenorreia</td>
+      <td class="plants-cell">102 92 316 336 355 374</td>
+    </tr>
+    <tr>
+      <td class="id-cell">51</td>
+      <td class="nom-cell">Amigdalite</td>
+      <td class="plants-cell">42 141 427</td>
+    </tr>
+    <tr>
+      <td class="id-cell">52</td>
+      <td class="nom-cell">anafrodisiaca</td>
+      <td class="plants-cell">508</td>
+    </tr>
+    <tr>
+      <td class="id-cell">53</td>
+      <td class="nom-cell">Analgesica</td>
+      <td class="plants-cell">54 83 111 115 121 122 148 161 165 177 188 225 236 275 297 311 324 377 392 404 407 414 416 421 429 433 441 479 497 508 37</td>
+    </tr>
+    <tr>
+      <td class="id-cell">54</td>
+      <td class="nom-cell">Ancilostomiase</td>
+      <td class="plants-cell">198</td>
+    </tr>
+    <tr>
+      <td class="id-cell">55</td>
+      <td class="nom-cell">Anemia</td>
+      <td class="plants-cell">52 72 79 92 107 113 121 122 170 174 196 259 311 455 461 490 492 515 536 538 33</td>
+    </tr>
+    <tr>
+      <td class="id-cell">56</td>
+      <td class="nom-cell">Anemia carencial</td>
+      <td class="plants-cell">158</td>
+    </tr>
+    <tr>
+      <td class="id-cell">57</td>
+      <td class="nom-cell">anestesica</td>
+      <td class="plants-cell"> 283 377 402 416 431 497 113</td>
+    </tr>
+    <tr>
+      <td class="id-cell">58</td>
+      <td class="nom-cell">anexite</td>
+      <td class="plants-cell">223</td>
+    </tr>
+    <tr>
+      <td class="id-cell">59</td>
+      <td class="nom-cell">angina</td>
+      <td class="plants-cell">124 122</td>
+    </tr>
+    <tr>
+      <td class="id-cell">60</td>
+      <td class="nom-cell">Angina do peito</td>
+      <td class="plants-cell">333</td>
+    </tr>
+    <tr>
+      <td class="id-cell">61</td>
+      <td class="nom-cell">Angina herpetica</td>
+      <td class="plants-cell">65</td>
+    </tr>
+    <tr>
+      <td class="id-cell">62</td>
+      <td class="nom-cell">Angustia</td>
+      <td class="plants-cell">147</td>
+    </tr>
+    <tr>
+      <td class="id-cell">63</td>
+      <td class="nom-cell">anorexia</td>
+      <td class="plants-cell">102 79 131 175</td>
+    </tr>
+    <tr>
+      <td class="id-cell">64</td>
+      <td class="nom-cell">ansiedade</td>
+      <td class="plants-cell">168 312 387 147</td>
+    </tr>
+    <tr>
+      <td class="id-cell">65</td>
+      <td class="nom-cell">antiacida</td>
+      <td class="plants-cell">406 122</td>
+    </tr>
+    <tr>
+      <td class="id-cell">66</td>
+      <td class="nom-cell">antialbuminurica</td>
+      <td class="plants-cell">151</td>
+    </tr>
+    <tr>
+      <td class="id-cell">67</td>
+      <td class="nom-cell">Antialergica</td>
+      <td class="plants-cell">134 94 223 274 267 437 517 544</td>
+    </tr>
+    <tr>
+      <td class="id-cell">68</td>
+      <td class="nom-cell">antiamebica</td>
+      <td class="plants-cell">492</td>
+    </tr>
+    <tr>
+      <td class="id-cell">69</td>
+      <td class="nom-cell">Anti amébica</td>
+      <td class="plants-cell">492</td>
+    </tr>
+    <tr>
+      <td class="id-cell">70</td>
+      <td class="nom-cell">Antianafilatica</td>
+      <td class="plants-cell">279</td>
+    </tr>
+    <tr>
+      <td class="id-cell">71</td>
+      <td class="nom-cell">Antianêmico</td>
+      <td class="plants-cell">377 342 493 522 537</td>
+    </tr>
+    <tr>
+      <td class="id-cell">72</td>
+      <td class="nom-cell">Antiartritico</td>
+      <td class="plants-cell">188 177</td>
+    </tr>
+    <tr>
+      <td class="id-cell">73</td>
+      <td class="nom-cell">Antiasmatico</td>
+      <td class="plants-cell">54 56 141 148 217 279 321 454 497 513</td>
+    </tr>
+    <tr>
+      <td class="id-cell">74</td>
+      <td class="nom-cell">antibacteriana</td>
+      <td class="plants-cell">44 65 134 134 203 257 315 397 421 443 36</td>
+    </tr>
+    <tr>
+      <td class="id-cell">75</td>
+      <td class="nom-cell">Antibiotico</td>
+      <td class="plants-cell">131 124</td>
+    </tr>
+    <tr>
+      <td class="id-cell">76</td>
+      <td class="nom-cell">antiblenorragico</td>
+      <td class="plants-cell">48 107 255 278 439 497</td>
+    </tr>
+    <tr>
+      <td class="id-cell">77</td>
+      <td class="nom-cell">Anticancerigeno</td>
+      <td class="plants-cell">178 497 517 535 78</td>
+    </tr>
+    <tr>
+      <td class="id-cell">78</td>
+      <td class="nom-cell">Anticarie</td>
+      <td class="plants-cell">530</td>
+    </tr>
+    <tr>
+      <td class="id-cell">79</td>
+      <td class="nom-cell">Anticatarral</td>
+      <td class="plants-cell">385 316</td>
+    </tr>
+    <tr>
+      <td class="id-cell">80</td>
+      <td class="nom-cell">Anticoagulante</td>
+      <td class="plants-cell">175</td>
+    </tr>
+    <tr>
+      <td class="id-cell">81</td>
+      <td class="nom-cell">Anticolestatico</td>
+      <td class="plants-cell">250</td>
+    </tr>
+    <tr>
+      <td class="id-cell">82</td>
+      <td class="nom-cell">Anticonvulsivo</td>
+      <td class="plants-cell">121 502</td>
+    </tr>
+    <tr>
+      <td class="id-cell">83</td>
+      <td class="nom-cell">Antidepressiva</td>
+      <td class="plants-cell">297</td>
+    </tr>
+    <tr>
+      <td class="id-cell">84</td>
+      <td class="nom-cell">Antidiabetico</td>
+      <td class="plants-cell">56 67 95 212 231 254 272 272 485</td>
+    </tr>
+    <tr>
+      <td class="id-cell">85</td>
+      <td class="nom-cell">Antidiarreica</td>
+      <td class="plants-cell">51 56 67 107 138 158 241 227 241 342 390 427 440 450 461 483 46</td>
+    </tr>
+    <tr>
+      <td class="id-cell">86</td>
+      <td class="nom-cell">Antidisenterica</td>
+      <td class="plants-cell"> 124 158 278 305 336 366 387 401 470 491 95</td>
+    </tr>
+    <tr>
+      <td class="id-cell">87</td>
+      <td class="nom-cell">Antidipeptica</td>
+      <td class="plants-cell"> 313 494 242</td>
+    </tr>
+    <tr>
+      <td class="id-cell">88</td>
+      <td class="nom-cell">Antiedematogenico</td>
+      <td class="plants-cell">149</td>
+    </tr>
+    <tr>
+      <td class="id-cell">89</td>
+      <td class="nom-cell">Antiepileptica</td>
+      <td class="plants-cell"> 423 511 326</td>
+    </tr>
+    <tr>
+      <td class="id-cell">90</td>
+      <td class="nom-cell">antiescorbutica</td>
+      <td class="plants-cell"> 144 192 359 401 406 470 519 538 72</td>
+    </tr>
+    <tr>
+      <td class="id-cell">91</td>
+      <td class="nom-cell">Antiespasmodica</td>
+      <td class="plants-cell"> 109 111 121 138 202 259 275 279 292 297 304 305 309 310 311 315 321 337 404 407 411 416 419 109</td>
+    </tr>
+    <tr>
+      <td class="id-cell">92</td>
+      <td class="nom-cell">Antiespasmodica gastrico</td>
+      <td class="plants-cell">319</td>
+    </tr>
+    <tr>
+      <td class="id-cell">93</td>
+      <td class="nom-cell">antifebril</td>
+      <td class="plants-cell"> 236 260 299 377 447 506 180</td>
+    </tr>
+    <tr>
+      <td class="id-cell">94</td>
+      <td class="nom-cell">Antifungico</td>
+      <td class="plants-cell"> 44 54 81 175 257 315 335 463 36</td>
+    </tr>
+    <tr>
+      <td class="id-cell">95</td>
+      <td class="nom-cell">antigonorreico</td>
+      <td class="plants-cell">461 441</td>
+    </tr>
+    <tr>
+      <td class="id-cell">96</td>
+      <td class="nom-cell">Antigripal</td>
+      <td class="plants-cell">313 385 468 302</td>
+    </tr>
+    <tr>
+      <td class="id-cell">97</td>
+      <td class="nom-cell">Antihelmintica</td>
+      <td class="plants-cell">69 82 99 118 162 203 216 220 236 274 277 296 315 317 379 443 477 493 532 49</td>
+    </tr>
+    <tr>
+      <td class="id-cell">98</td>
+      <td class="nom-cell">antihemorragica</td>
+      <td class="plants-cell">278 537 243</td>
+    </tr>
+    <tr>
+      <td class="id-cell">99</td>
+      <td class="nom-cell">Antihemorroidal</td>
+      <td class="plants-cell">361 441 487 95</td>
+    </tr>
+    <tr>
+      <td class="id-cell">100</td>
+      <td class="nom-cell">Antihepatotoxica</td>
+      <td class="plants-cell">541</td>
+    </tr>
+    <tr>
+      <td class="id-cell">101</td>
+      <td class="nom-cell">Antihidropica</td>
+      <td class="plants-cell">454</td>
+    </tr>
+    <tr>
+      <td class="id-cell">102</td>
+      <td class="nom-cell">Anti hiperlipidêmica</td>
+      <td class="plants-cell">541</td>
+    </tr>
+    <tr>
+      <td class="id-cell">103</td>
+      <td class="nom-cell">Anti hipertensivo</td>
+      <td class="plants-cell">248 322 513 541 54</td>
+    </tr>
+    <tr>
+      <td class="id-cell">104</td>
+      <td class="nom-cell">Anti histaminica</td>
+      <td class="plants-cell">279 322 513 541 236</td>
+    </tr>
+    <tr>
+      <td class="id-cell">105</td>
+      <td class="nom-cell">Anti infeccioso</td>
+      <td class="plants-cell">342 354 175</td>
+    </tr>
+    <tr>
+      <td class="id-cell">106</td>
+      <td class="nom-cell">Anti inflamatorio</td>
+      <td class="plants-cell">40 56 56 59 59 63 64 72 73 83 92 97 109 111 115 122 124 134 136 142 142 148 161 164 174 175 182 185 188 188 197 199 203 225 236 236 241 243 252 255 259 274 275 279 309 413 421 429 437 441 443 452 454 459 463 466 466 470 479 479 485 497 513 513 520 535 241 544 37</td>
+    </tr>
+    <tr>
+      <td class="id-cell">107</td>
+      <td class="nom-cell">Anti inflamatorio dos rins</td>
+      <td class="plants-cell">227</td>
+    </tr>
+    <tr>
+      <td class="id-cell">108</td>
+      <td class="nom-cell">Anti inflamatorio intestinal</td>
+      <td class="plants-cell">330</td>
+    </tr>
+    <tr>
+      <td class="id-cell">109</td>
+      <td class="nom-cell">Anti irritante</td>
+      <td class="plants-cell">185</td>
+    </tr>
+    <tr>
+      <td class="id-cell">110</td>
+      <td class="nom-cell">antileucemica</td>
+      <td class="plants-cell">210 248 85</td>
+    </tr>
+    <tr>
+      <td class="id-cell">111</td>
+      <td class="nom-cell">Antiluética</td>
+      <td class="plants-cell">348</td>
+    </tr>
+    <tr>
+      <td class="id-cell">112</td>
+      <td class="nom-cell">antimalarica</td>
+      <td class="plants-cell">107 333 371 423 77</td>
+    </tr>
+    <tr>
+      <td class="id-cell">113</td>
+      <td class="nom-cell">Antimicotico</td>
+      <td class="plants-cell">299 397 117</td>
+    </tr>
+    <tr>
+      <td class="id-cell">114</td>
+      <td class="nom-cell">Antimicrobiano</td>
+      <td class="plants-cell">134 174 175 218 236 254 255 257 268 268 274 304 322 361 381 381 392 397 399 421 433 435 461 488 530 541 544 64</td>
+    </tr>
+    <tr>
+      <td class="id-cell">115</td>
+      <td class="nom-cell">Antimuscarinica</td>
+      <td class="plants-cell">283</td>
+    </tr>
+    <tr>
+      <td class="id-cell">116</td>
+      <td class="nom-cell">Antineoplasica</td>
+      <td class="plants-cell">175 452 82</td>
+    </tr>
+    <tr>
+      <td class="id-cell">117</td>
+      <td class="nom-cell">Antineoplastica</td>
+      <td class="plants-cell">184</td>
+    </tr>
+    <tr>
+      <td class="id-cell">118</td>
+      <td class="nom-cell">Antinevralgica</td>
+      <td class="plants-cell">309</td>
+    </tr>
+    <tr>
+      <td class="id-cell">119</td>
+      <td class="nom-cell">ANtiofidica</td>
+      <td class="plants-cell">511 297</td>
+    </tr>
+    <tr>
+      <td class="id-cell">120</td>
+      <td class="nom-cell">Antioftalmica</td>
+      <td class="plants-cell">164 141</td>
+    </tr>
+    <tr>
+      <td class="id-cell">121</td>
+      <td class="nom-cell">Antioxidante</td>
+      <td class="plants-cell">90 97 205 207 243 268 292 322 354 385 392 423 513 44</td>
+    </tr>
+    <tr>
+      <td class="id-cell">122</td>
+      <td class="nom-cell">antiparasitico</td>
+      <td class="plants-cell">79 148 216</td>
+    </tr>
+    <tr>
+      <td class="id-cell">123</td>
+      <td class="nom-cell">Antipirético</td>
+      <td class="plants-cell">40 170 177 203 236 259 299 423 443 524 37</td>
+    </tr>
+    <tr>
+      <td class="id-cell">124</td>
+      <td class="nom-cell">antiprurido</td>
+      <td class="plants-cell">317 418 315</td>
+    </tr>
+    <tr>
+      <td class="id-cell">125</td>
+      <td class="nom-cell">antirreumatica</td>
+      <td class="plants-cell">49 69 83 94 96 115 140 148 151 166 177 202 214 243 248 299 309 319 322 340 340 342 371 387 398 432 463 470 479 497 522 544 35</td>
+    </tr>
+    <tr>
+      <td class="id-cell">126</td>
+      <td class="nom-cell">Antisséptico</td>
+      <td class="plants-cell">56 56 61 75 102 117 131 134 140 202 243 297 310 317 387 398 432 497 519 522 527 529 530 535 537 40</td>
+    </tr>
+    <tr>
+      <td class="id-cell">127</td>
+      <td class="nom-cell">Antisséptica pulmonar</td>
+      <td class="plants-cell">320</td>
+    </tr>
+    <tr>
+      <td class="id-cell">128</td>
+      <td class="nom-cell">Antissifilitica</td>
+      <td class="plants-cell">530</td>
+    </tr>
+    <tr>
+      <td class="id-cell">129</td>
+      <td class="nom-cell">Antitermico</td>
+      <td class="plants-cell">140 168 178 225 340 348 493 58</td>
+    </tr>
+    <tr>
+      <td class="id-cell">130</td>
+      <td class="nom-cell">Antitrombose</td>
+      <td class="plants-cell">544</td>
+    </tr>
+    <tr>
+      <td class="id-cell">131</td>
+      <td class="nom-cell">antitrombotica</td>
+      <td class="plants-cell">97 275 483 44</td>
+    </tr>
+    <tr>
+      <td class="id-cell">132</td>
+      <td class="nom-cell">Antitumoral</td>
+      <td class="plants-cell">46 54 89 175 210 231 248 252 330 302 399 461 491 44</td>
+    </tr>
+    <tr>
+      <td class="id-cell">133</td>
+      <td class="nom-cell">Antitussigeno</td>
+      <td class="plants-cell">149</td>
+    </tr>
+    <tr>
+      <td class="id-cell">134</td>
+      <td class="nom-cell">antiulcera</td>
+      <td class="plants-cell">223 315 517 122</td>
+    </tr>
+    <tr>
+      <td class="id-cell">135</td>
+      <td class="nom-cell">Antiulcera gastricas</td>
+      <td class="plants-cell">479</td>
+    </tr>
+    <tr>
+      <td class="id-cell">136</td>
+      <td class="nom-cell">Antriulcerogenico</td>
+      <td class="plants-cell">188 210 322 59</td>
+    </tr>
+    <tr>
+      <td class="id-cell">137</td>
+      <td class="nom-cell">Antiviral</td>
+      <td class="plants-cell">54 65 81 92 134 243 315 368 372 392 414 506 544 44</td>
+    </tr>
+    <tr>
+      <td class="id-cell">138</td>
+      <td class="nom-cell">Antivirotica</td>
+      <td class="plants-cell">127 134 397 </td>
+    </tr>
+    <tr>
+      <td class="id-cell">139</td>
+      <td class="nom-cell">Antivomitiva</td>
+      <td class="plants-cell">313 315 317 506 544 202</td>
+    </tr>
+    <tr>
+      <td class="id-cell">140</td>
+      <td class="nom-cell">arritmia</td>
+      <td class="plants-cell">455 425</td>
+    </tr>
+    <tr>
+      <td class="id-cell">141</td>
+      <td class="nom-cell">arteriosclerose</td>
+      <td class="plants-cell">44 348 483 42</td>
+    </tr>
+    <tr>
+      <td class="id-cell">142</td>
+      <td class="nom-cell">artrite</td>
+      <td class="plants-cell">52 79 97 187 257 309 324 337 404 416 441 487 495 497 40</td>
+    </tr>
+    <tr>
+      <td class="id-cell">143</td>
+      <td class="nom-cell">Artrite reumatoide</td>
+      <td class="plants-cell">188</td>
+    </tr>
+    <tr>
+      <td class="id-cell">144</td>
+      <td class="nom-cell">asma</td>
+      <td class="plants-cell"> 92 102 111 136 141 149 168 198 203 220 257 275 281 285 297 304 310 324 325 357 374 439 461 487 524 36</td>
+    </tr>
+    <tr>
+      <td class="id-cell">145</td>
+      <td class="nom-cell">Asma bronquica</td>
+      <td class="plants-cell">305 535 79</td>
+    </tr>
+    <tr>
+      <td class="id-cell">146</td>
+      <td class="nom-cell">AStenia</td>
+      <td class="plants-cell">121 158 163 168 305 332 441 109</td>
+    </tr>
+    <tr>
+      <td class="id-cell">147</td>
+      <td class="nom-cell">Astenia cardiaca</td>
+      <td class="plants-cell">398</td>
+    </tr>
+    <tr>
+      <td class="id-cell">148</td>
+      <td class="nom-cell">AStenia sexual</td>
+      <td class="plants-cell">421</td>
+    </tr>
+    <tr>
+      <td class="id-cell">149</td>
+      <td class="nom-cell">Ativador da circulação sanguinea</td>
+      <td class="plants-cell">348 536</td>
+    </tr>
+    <tr>
+      <td class="id-cell">150</td>
+      <td class="nom-cell">atonia</td>
+      <td class="plants-cell">210</td>
+    </tr>
+    <tr>
+      <td class="id-cell">151</td>
+      <td class="nom-cell">Atonia digestiva</td>
+      <td class="plants-cell">377</td>
+    </tr>
+    <tr>
+      <td class="id-cell">152</td>
+      <td class="nom-cell">Atonia gastrica</td>
+      <td class="plants-cell">515</td>
+    </tr>
+    <tr>
+      <td class="id-cell">153</td>
+      <td class="nom-cell">Atonia gastrointestinal</td>
+      <td class="plants-cell">74</td>
+    </tr>
+    <tr>
+      <td class="id-cell">154</td>
+      <td class="nom-cell">Atonia intestinal</td>
+      <td class="plants-cell">196</td>
+    </tr>
+    <tr>
+      <td class="id-cell">155</td>
+      <td class="nom-cell">Azia</td>
+      <td class="plants-cell">138 159 328 407 64</td>
+    </tr>
+    <tr>
+      <td class="id-cell">156</td>
+      <td class="nom-cell">bactericida</td>
+      <td class="plants-cell">522</td>
+    </tr>
+    <tr>
+      <td class="id-cell">157</td>
+      <td class="nom-cell">Balsamica</td>
+      <td class="plants-cell">166 236 61</td>
+    </tr>
+    <tr>
+      <td class="id-cell">158</td>
+      <td class="nom-cell">Batimento cardiaco irregulares</td>
+      <td class="plants-cell">36</td>
+    </tr>
+    <tr>
+      <td class="id-cell">159</td>
+      <td class="nom-cell">bequica</td>
+      <td class="plants-cell">46 310 310 440 46</td>
+    </tr>
+    <tr>
+      <td class="id-cell">160</td>
+      <td class="nom-cell">Bicho de pé</td>
+      <td class="plants-cell">395 216</td>
+    </tr>
+    <tr>
+      <td class="id-cell">161</td>
+      <td class="nom-cell">Biliar</td>
+      <td class="plants-cell">163</td>
+    </tr>
+    <tr>
+      <td class="id-cell">162</td>
+      <td class="nom-cell">Blenorragia</td>
+      <td class="plants-cell">151 212 279 366 366 419 124</td>
+    </tr>
+    <tr>
+      <td class="id-cell">163</td>
+      <td class="nom-cell">Bocio</td>
+      <td class="plants-cell">196</td>
+    </tr>
+    <tr>
+      <td class="id-cell">164</td>
+      <td class="nom-cell">broncodilatador</td>
+      <td class="plants-cell">279 275</td>
+    </tr>
+    <tr>
+      <td class="id-cell">165</td>
+      <td class="nom-cell">broncopulmonares</td>
+      <td class="plants-cell">196 144</td>
+    </tr>
+    <tr>
+      <td class="id-cell">166</td>
+      <td class="nom-cell">bronquite</td>
+      <td class="plants-cell">49 81 107 134 136 149 154 160 166 180 185 192 192 197 198 201 203 205 252 257 275 281 283 285 291 297 304 307 310 312 313 321 324 326 336 357 366 374 376 377 378 387 404 423 429 437 452 475 487 524 529 35</td>
+    </tr>
+    <tr>
+      <td class="id-cell">167</td>
+      <td class="nom-cell">Bronquite asmatica</td>
+      <td class="plants-cell">141 316</td>
+    </tr>
+    <tr>
+      <td class="id-cell">168</td>
+      <td class="nom-cell">Bronquite catarral</td>
+      <td class="plants-cell">543 532</td>
+    </tr>
+    <tr>
+      <td class="id-cell">169</td>
+      <td class="nom-cell">Bronquite catarral cronica</td>
+      <td class="plants-cell">316</td>
+    </tr>
+    <tr>
+      <td class="id-cell">170</td>
+      <td class="nom-cell">Bronquite cronica</td>
+      <td class="plants-cell">168 305 332 427 439 535 79</td>
+    </tr>
+    <tr>
+      <td class="id-cell">171</td>
+      <td class="nom-cell">Brotoejas</td>
+      <td class="plants-cell">463</td>
+    </tr>
+    <tr>
+      <td class="id-cell">172</td>
+      <td class="nom-cell">Bursite</td>
+      <td class="plants-cell">257</td>
+    </tr>
+    <tr>
+      <td class="id-cell">173</td>
+      <td class="nom-cell">caimbra</td>
+      <td class="plants-cell">161 477 83</td>
+    </tr>
+    <tr>
+      <td class="id-cell">174</td>
+      <td class="nom-cell">Calafrios</td>
+      <td class="plants-cell">313</td>
+    </tr>
+    <tr>
+      <td class="id-cell">175</td>
+      <td class="nom-cell">Calcificacao de fraturas</td>
+      <td class="plants-cell">33</td>
+    </tr>
+    <tr>
+      <td class="id-cell">176</td>
+      <td class="nom-cell">Calculo biliar</td>
+      <td class="plants-cell">404 459 541 165</td>
+    </tr>
+    <tr>
+      <td class="id-cell">177</td>
+      <td class="nom-cell">Calculo renal</td>
+      <td class="plants-cell">109</td>
+    </tr>
+    <tr>
+      <td class="id-cell">178</td>
+      <td class="nom-cell">calculos na vesicula</td>
+      <td class="plants-cell">126</td>
+    </tr>
+    <tr>
+      <td class="id-cell">179</td>
+      <td class="nom-cell">Calculos nos rins</td>
+      <td class="plants-cell">201</td>
+    </tr>
+    <tr>
+      <td class="id-cell">180</td>
+      <td class="nom-cell">Calculos renais</td>
+      <td class="plants-cell">42 72 75 140 166 436 40</td>
+    </tr>
+    <tr>
+      <td class="id-cell">181</td>
+      <td class="nom-cell">calculos urniarios</td>
+      <td class="plants-cell">140</td>
+    </tr>
+    <tr>
+      <td class="id-cell">182</td>
+      <td class="nom-cell">Calmante</td>
+      <td class="plants-cell">152 203 217 245 281 283 304 309 312 361 409 411 433 510 511 523 52</td>
+    </tr>
+    <tr>
+      <td class="id-cell">183</td>
+      <td class="nom-cell">Calmante de tosses</td>
+      <td class="plants-cell">283</td>
+    </tr>
+    <tr>
+      <td class="id-cell">184</td>
+      <td class="nom-cell">Calmante do estomago</td>
+      <td class="plants-cell">147</td>
+    </tr>
+    <tr>
+      <td class="id-cell">185</td>
+      <td class="nom-cell">Calos</td>
+      <td class="plants-cell">404 203</td>
+    </tr>
+    <tr>
+      <td class="id-cell">186</td>
+      <td class="nom-cell">Cancer</td>
+      <td class="plants-cell">87 175 455 466 83</td>
+    </tr>
+    <tr>
+      <td class="id-cell">187</td>
+      <td class="nom-cell">Cancer de colon</td>
+      <td class="plants-cell">44</td>
+    </tr>
+    <tr>
+      <td class="id-cell">188</td>
+      <td class="nom-cell">Cancer de pele cansado fisico</td>
+      <td class="plants-cell">404 246</td>
+    </tr>
+    <tr>
+      <td class="id-cell">189</td>
+      <td class="nom-cell">Cansaco fisico</td>
+      <td class="plants-cell">445 52</td>
+    </tr>
+    <tr>
+      <td class="id-cell">190</td>
+      <td class="nom-cell">Cansaco muscular</td>
+      <td class="plants-cell">177</td>
+    </tr>
+    <tr>
+      <td class="id-cell">191</td>
+      <td class="nom-cell">Cansaco psiquico</td>
+      <td class="plants-cell">52</td>
+    </tr>
+    <tr>
+      <td class="id-cell">192</td>
+      <td class="nom-cell">Cansaco mental</td>
+      <td class="plants-cell">445</td>
+    </tr>
+    <tr>
+      <td class="id-cell">193</td>
+      <td class="nom-cell">Carcinomas</td>
+      <td class="plants-cell">481</td>
+    </tr>
+    <tr>
+      <td class="id-cell">194</td>
+      <td class="nom-cell">Cardiaca</td>
+      <td class="plants-cell">310</td>
+    </tr>
+    <tr>
+      <td class="id-cell">195</td>
+      <td class="nom-cell">Cardioprotetora</td>
+      <td class="plants-cell">44</td>
+    </tr>
+    <tr>
+      <td class="id-cell">196</td>
+      <td class="nom-cell">Cardiotonico</td>
+      <td class="plants-cell">316 357 366 544 </td>
+    </tr>
+    <tr>
+      <td class="id-cell">197</td>
+      <td class="nom-cell">Carie dental</td>
+      <td class="plants-cell">517 527 530 56</td>
+    </tr>
+    <tr>
+      <td class="id-cell">198</td>
+      <td class="nom-cell">carminativa</td>
+      <td class="plants-cell">69 71 74 75 78 118 134 154 197 222 236 245 257 305 309 311 315 316 317 321 325 330 342 397 419 468 494 523 538 51</td>
+    </tr>
+    <tr>
+      <td class="id-cell">199</td>
+      <td class="nom-cell">Carminativo nas colicas flatulentas</td>
+      <td class="plants-cell">544</td>
+    </tr>
+    <tr>
+      <td class="id-cell">200</td>
+      <td class="nom-cell">Caspa</td>
+      <td class="plants-cell">102 530 39</td>
+    </tr>
+    <tr>
+      <td class="id-cell">201</td>
+      <td class="nom-cell">Catapora</td>
+      <td class="plants-cell">40</td>
+    </tr>
+    <tr>
+      <td class="id-cell">202</td>
+      <td class="nom-cell">catarata</td>
+      <td class="plants-cell">350</td>
+    </tr>
+    <tr>
+      <td class="id-cell">203</td>
+      <td class="nom-cell">Catarro</td>
+      <td class="plants-cell">160 257 285 304 524 535 40</td>
+    </tr>
+    <tr>
+      <td class="id-cell">204</td>
+      <td class="nom-cell">Catarro cronico</td>
+      <td class="plants-cell">337</td>
+    </tr>
+    <tr>
+      <td class="id-cell">205</td>
+      <td class="nom-cell">Catarro da bexiga</td>
+      <td class="plants-cell">212 48</td>
+    </tr>
+    <tr>
+      <td class="id-cell">206</td>
+      <td class="nom-cell">Catarro dos bronquios</td>
+      <td class="plants-cell">192 366</td>
+    </tr>
+    <tr>
+      <td class="id-cell">207</td>
+      <td class="nom-cell">Catarro pulmonar</td>
+      <td class="plants-cell">140</td>
+    </tr>
+    <tr>
+      <td class="id-cell">208</td>
+      <td class="nom-cell">catartica</td>
+      <td class="plants-cell">397 461 346</td>
+    </tr>
+    <tr>
+      <td class="id-cell">209</td>
+      <td class="nom-cell">cefaleia</td>
+      <td class="plants-cell">69 297 302 312 37</td>
+    </tr>
+    <tr>
+      <td class="id-cell">210</td>
+      <td class="nom-cell">celulite</td>
+      <td class="plants-cell">73</td>
+    </tr>
+    <tr>
+      <td class="id-cell">211</td>
+      <td class="nom-cell">cervicite</td>
+      <td class="plants-cell">64 175 326 59</td>
+    </tr>
+    <tr>
+      <td class="id-cell">212</td>
+      <td class="nom-cell">Cervicovaginite</td>
+      <td class="plants-cell">175</td>
+    </tr>
+    <tr>
+      <td class="id-cell">213</td>
+      <td class="nom-cell">Chagas</td>
+      <td class="plants-cell">158 197 141</td>
+    </tr>
+    <tr>
+      <td class="id-cell">214</td>
+      <td class="nom-cell">Ciatica</td>
+      <td class="plants-cell">225</td>
+    </tr>
+    <tr>
+      <td class="id-cell">215</td>
+      <td class="nom-cell">Cicatrizacao da pele</td>
+      <td class="plants-cell">127</td>
+    </tr>
+    <tr>
+      <td class="id-cell">216</td>
+      <td class="nom-cell">Cicatrizacao de feridas</td>
+      <td class="plants-cell">265</td>
+    </tr>
+    <tr>
+      <td class="id-cell">217</td>
+      <td class="nom-cell">Cicatrizacao de ferimentos</td>
+      <td class="plants-cell">491</td>
+    </tr>
+    <tr>
+      <td class="id-cell">218</td>
+      <td class="nom-cell">Cicatrizante</td>
+      <td class="plants-cell">59 59 63 64 73 101 105 109 134 156 158 185 188 199 243 248 255 296 297 300 355 381 381 383 399 443 445 427 479 508 40</td>
+    </tr>
+    <tr>
+      <td class="id-cell">219</td>
+      <td class="nom-cell">cirrose</td>
+      <td class="plants-cell">155</td>
+    </tr>
+    <tr>
+      <td class="id-cell">220</td>
+      <td class="nom-cell">cistite</td>
+      <td class="plants-cell">79 151 272 304 366 366 395 443 75</td>
+    </tr>
+    <tr>
+      <td class="id-cell">221</td>
+      <td class="nom-cell">Cistite cronica</td>
+      <td class="plants-cell">257</td>
+    </tr>
+    <tr>
+      <td class="id-cell">222</td>
+      <td class="nom-cell">clorose</td>
+      <td class="plants-cell">102</td>
+    </tr>
+    <tr>
+      <td class="id-cell">223</td>
+      <td class="nom-cell">Coceira na pele</td>
+      <td class="plants-cell">313</td>
+    </tr>
+    <tr>
+      <td class="id-cell">224</td>
+      <td class="nom-cell">Coceiras</td>
+      <td class="plants-cell">397 445 463 140</td>
+    </tr>
+    <tr>
+      <td class="id-cell">225</td>
+      <td class="nom-cell">Colagoga</td>
+      <td class="plants-cell">294 330 395 419 544 118</td>
+    </tr>
+    <tr>
+      <td class="id-cell">226</td>
+      <td class="nom-cell">colera</td>
+      <td class="plants-cell">236</td>
+    </tr>
+    <tr>
+      <td class="id-cell">227</td>
+      <td class="nom-cell">Coleretico</td>
+      <td class="plants-cell">330 250</td>
+    </tr>
+    <tr>
+      <td class="id-cell">228</td>
+      <td class="nom-cell">colerica</td>
+      <td class="plants-cell">209</td>
+    </tr>
+    <tr>
+      <td class="id-cell">229</td>
+      <td class="nom-cell">colesterol</td>
+      <td class="plants-cell">44 52 56 241 284</td>
+    </tr>
+    <tr>
+      <td class="id-cell">230</td>
+      <td class="nom-cell">Colica renais</td>
+      <td class="plants-cell">109</td>
+    </tr>
+    <tr>
+      <td class="id-cell">231</td>
+      <td class="nom-cell">Colica</td>
+      <td class="plants-cell">79 81 111 127 138 222 377 472 508 538 78</td>
+    </tr>
+    <tr>
+      <td class="id-cell">232</td>
+      <td class="nom-cell">Colicas abdominais</td>
+      <td class="plants-cell">511 37</td>
+    </tr>
+    <tr>
+      <td class="id-cell">233</td>
+      <td class="nom-cell">Colicas de bebes</td>
+      <td class="plants-cell">468</td>
+    </tr>
+    <tr>
+      <td class="id-cell">234</td>
+      <td class="nom-cell">Colicas flatulentas</td>
+      <td class="plants-cell">131</td>
+    </tr>
+    <tr>
+      <td class="id-cell">235</td>
+      <td class="nom-cell">Colicas gastrointestinais</td>
+      <td class="plants-cell">74</td>
+    </tr>
+    <tr>
+      <td class="id-cell">236</td>
+      <td class="nom-cell">Colicas intestinais</td>
+      <td class="plants-cell">111 127 138 222 377 472 508 538 109</td>
+    </tr>
+    <tr>
+      <td class="id-cell">237</td>
+      <td class="nom-cell">Colicas renais</td>
+      <td class="plants-cell">443 511 111</td>
+    </tr>
+    <tr>
+      <td class="id-cell">238</td>
+      <td class="nom-cell">Colicas uterinas</td>
+      <td class="plants-cell">433 152</td>
+    </tr>
+    <tr>
+      <td class="id-cell">239</td>
+      <td class="nom-cell">colite</td>
+      <td class="plants-cell">97 360 51</td>
+    </tr>
+    <tr>
+      <td class="id-cell">240</td>
+      <td class="nom-cell">Colite cronica</td>
+      <td class="plants-cell">72</td>
+    </tr>
+    <tr>
+      <td class="id-cell">241</td>
+      <td class="nom-cell">comedoes</td>
+      <td class="plants-cell">197</td>
+    </tr>
+    <tr>
+      <td class="id-cell">242</td>
+      <td class="nom-cell">congestao bronquica</td>
+      <td class="plants-cell">209</td>
+    </tr>
+    <tr>
+      <td class="id-cell">243</td>
+      <td class="nom-cell">Congestion nasal</td>
+      <td class="plants-cell">529</td>
+    </tr>
+    <tr>
+      <td class="id-cell">244</td>
+      <td class="nom-cell">conjuntivite</td>
+      <td class="plants-cell">164 397 427 488 488 126</td>
+    </tr>
+    <tr>
+      <td class="id-cell">245</td>
+      <td class="nom-cell">Constipacao intestinal</td>
+      <td class="plants-cell">360</td>
+    </tr>
+    <tr>
+      <td class="id-cell">246</td>
+      <td class="nom-cell">Contraceptivo</td>
+      <td class="plants-cell">429</td>
+    </tr>
+    <tr>
+      <td class="id-cell">247</td>
+      <td class="nom-cell">contusao</td>
+      <td class="plants-cell">109 126 144 156 188 192 205 315 339 342 360 416 487 524 532 49</td>
+    </tr>
+    <tr>
+      <td class="id-cell">248</td>
+      <td class="nom-cell">convulsoes</td>
+      <td class="plants-cell">102</td>
+    </tr>
+    <tr>
+      <td class="id-cell">249</td>
+      <td class="nom-cell">Coqueluche</td>
+      <td class="plants-cell">252 291 316 452 524 180</td>
+    </tr>
+    <tr>
+      <td class="id-cell">250</td>
+      <td class="nom-cell">Corrimento vaginal</td>
+      <td class="plants-cell">279 295 530 227</td>
+    </tr>
+    <tr>
+      <td class="id-cell">251</td>
+      <td class="nom-cell">cortes</td>
+      <td class="plants-cell">463</td>
+    </tr>
+    <tr>
+      <td class="id-cell">252</td>
+      <td class="nom-cell">Cravos</td>
+      <td class="plants-cell">197</td>
+    </tr>
+    <tr>
+      <td class="id-cell">253</td>
+      <td class="nom-cell">Crises de asma</td>
+      <td class="plants-cell">180</td>
+    </tr>
+    <tr>
+      <td class="id-cell">254</td>
+      <td class="nom-cell">Crises de hemorroides</td>
+      <td class="plants-cell">260</td>
+    </tr>
+    <tr>
+      <td class="id-cell">255</td>
+      <td class="nom-cell">Cumarinas</td>
+      <td class="plants-cell">491</td>
+    </tr>
+    <tr>
+      <td class="id-cell">256</td>
+      <td class="nom-cell">curarizante</td>
+      <td class="plants-cell">283</td>
+    </tr>
+    <tr>
+      <td class="id-cell">257</td>
+      <td class="nom-cell">Dartro</td>
+      <td class="plants-cell">454 39</td>
+    </tr>
+    <tr>
+      <td class="id-cell">258</td>
+      <td class="nom-cell">Debilidade organica</td>
+      <td class="plants-cell">445</td>
+    </tr>
+    <tr>
+      <td class="id-cell">259</td>
+      <td class="nom-cell">Decoccao contra bronquite</td>
+      <td class="plants-cell">140</td>
+    </tr>
+    <tr>
+      <td class="id-cell">260</td>
+      <td class="nom-cell">dengue</td>
+      <td class="plants-cell">333</td>
+    </tr>
+    <tr>
+      <td class="id-cell">261</td>
+      <td class="nom-cell">Depilatorio</td>
+      <td class="plants-cell">83 39</td>
+    </tr>
+    <tr>
+      <td class="id-cell">262</td>
+      <td class="nom-cell">Depression</td>
+      <td class="plants-cell">304 332 147</td>
+    </tr>
+    <tr>
+      <td class="id-cell">263</td>
+      <td class="nom-cell">Depressora do SNC</td>
+      <td class="plants-cell">283</td>
+    </tr>
+    <tr>
+      <td class="id-cell">264</td>
+      <td class="nom-cell">Depurativa</td>
+      <td class="plants-cell">46 56 72 73 117 182 209 220 222 225 279 291 348 404 406 427 479 508 510 535 537 42</td>
+    </tr>
+    <tr>
+      <td class="id-cell">265</td>
+      <td class="nom-cell">Depurativa do sangue</td>
+      <td class="plants-cell">192 340 376 443 479 </td>
+    </tr>
+    <tr>
+      <td class="id-cell">266</td>
+      <td class="nom-cell">depurativa do organismo</td>
+      <td class="plants-cell">42</td>
+    </tr>
+    <tr>
+      <td class="id-cell">267</td>
+      <td class="nom-cell">Dermatite</td>
+      <td class="plants-cell">75 219 337 35</td>
+    </tr>
+    <tr>
+      <td class="id-cell">268</td>
+      <td class="nom-cell">Dermatite alergica</td>
+      <td class="plants-cell">64</td>
+    </tr>
+    <tr>
+      <td class="id-cell">269</td>
+      <td class="nom-cell">Dermatoses</td>
+      <td class="plants-cell">40 216 225 240 263 299 325 376 39</td>
+    </tr>
+    <tr>
+      <td class="id-cell">270</td>
+      <td class="nom-cell">Dermatoses umidas</td>
+      <td class="plants-cell">117</td>
+    </tr>
+    <tr>
+      <td class="id-cell">271</td>
+      <td class="nom-cell">Derrames</td>
+      <td class="plants-cell">536</td>
+    </tr>
+    <tr>
+      <td class="id-cell">272</td>
+      <td class="nom-cell">descongestionante</td>
+      <td class="plants-cell">257</td>
+    </tr>
+    <tr>
+      <td class="id-cell">273</td>
+      <td class="nom-cell">descongestionante</td>
+      <td class="plants-cell">313</td>
+    </tr>
+    <tr>
+      <td class="id-cell">274</td>
+      <td class="nom-cell">Desintoxicacao do sangue</td>
+      <td class="plants-cell">483</td>
+    </tr>
+    <tr>
+      <td class="id-cell">275</td>
+      <td class="nom-cell">Desintoxicante</td>
+      <td class="plants-cell">225</td>
+    </tr>
+    <tr>
+      <td class="id-cell">276</td>
+      <td class="nom-cell">Desintocante do corpo</td>
+      <td class="plants-cell">279</td>
+    </tr>
+    <tr>
+      <td class="id-cell">277</td>
+      <td class="nom-cell">Desobstruente</td>
+      <td class="plants-cell">136</td>
+    </tr>
+    <tr>
+      <td class="id-cell">278</td>
+      <td class="nom-cell">Desobstruente do fígado</td>
+      <td class="plants-cell">510 294</td>
+    </tr>
+    <tr>
+      <td class="id-cell">279</td>
+      <td class="nom-cell">Diabete</td>
+      <td class="plants-cell">117 122 124 163 196 203 213 214 222 241 270 272 332 336 368 394 416 429 511 52</td>
+    </tr>
+    <tr>
+      <td class="id-cell">280</td>
+      <td class="nom-cell">Diaforetica</td>
+      <td class="plants-cell">107 117 222 236 321 348 357 377 440 495 497 504 102</td>
+    </tr>
+    <tr>
+      <td class="id-cell">281</td>
+      <td class="nom-cell">diarreia</td>
+      <td class="plants-cell">58 99 101 107 109 111 122 131 136 138 151 152 161 170 172 175 231 234 236 257 257 279 295 300 333 336 353 357 390 390 429 441 461 463 468 490 517 537 33</td>
+    </tr>
+    <tr>
+      <td class="id-cell">282</td>
+      <td class="nom-cell">Diarreia alimentar</td>
+      <td class="plants-cell">165</td>
+    </tr>
+    <tr>
+      <td class="id-cell">283</td>
+      <td class="nom-cell">Diarreia cronica</td>
+      <td class="plants-cell">212 350 483</td>
+    </tr>
+    <tr>
+      <td class="id-cell">284</td>
+      <td class="nom-cell">Diarreia infantil</td>
+      <td class="plants-cell">390 464 338</td>
+    </tr>
+    <tr>
+      <td class="id-cell">285</td>
+      <td class="nom-cell">Diarreia pesada</td>
+      <td class="plants-cell">102</td>
+    </tr>
+    <tr>
+      <td class="id-cell">286</td>
+      <td class="nom-cell">Digestivo</td>
+      <td class="plants-cell">75 122 144 203 304 337 377 468 543 46</td>
+    </tr>
+    <tr>
+      <td class="id-cell">287</td>
+      <td class="nom-cell">Digestivo estomacal</td>
+      <td class="plants-cell">111</td>
+    </tr>
+    <tr>
+      <td class="id-cell">288</td>
+      <td class="nom-cell">Digestivo hepatico</td>
+      <td class="plants-cell">111</td>
+    </tr>
+    <tr>
+      <td class="id-cell">289</td>
+      <td class="nom-cell">digestivo intestinal</td>
+      <td class="plants-cell">111</td>
+    </tr>
+    <tr>
+      <td class="id-cell">290</td>
+      <td class="nom-cell">Disenteria</td>
+      <td class="plants-cell">124 185 222 257 285 355 357 366 398 440 443 492 532 538 111</td>
+    </tr>
+    <tr>
+      <td class="id-cell">291</td>
+      <td class="nom-cell">Disenteria amebiana</td>
+      <td class="plants-cell">350</td>
+    </tr>
+    <tr>
+      <td class="id-cell">292</td>
+      <td class="nom-cell">Disfuncao intestinal</td>
+      <td class="plants-cell">537</td>
+    </tr>
+    <tr>
+      <td class="id-cell">293</td>
+      <td class="nom-cell">Disfuncoes estomacais </td>
+      <td class="plants-cell">122</td>
+    </tr>
+    <tr>
+      <td class="id-cell">294</td>
+      <td class="nom-cell">Disfuncoes hormonais</td>
+      <td class="plants-cell">52</td>
+    </tr>
+    <tr>
+      <td class="id-cell">295</td>
+      <td class="nom-cell">Dismenorreia</td>
+      <td class="plants-cell">97 285 316 330 51</td>
+    </tr>
+    <tr>
+      <td class="id-cell">296</td>
+      <td class="nom-cell">Dispepsia</td>
+      <td class="plants-cell">79 102 107 109 113 121 131 152 160 225 257 305 307 312 328 332 455 483 491 492 532 538 544 51</td>
+    </tr>
+    <tr>
+      <td class="id-cell">297</td>
+      <td class="nom-cell">Dispepsias nervosas</td>
+      <td class="plants-cell">154</td>
+    </tr>
+    <tr>
+      <td class="id-cell">298</td>
+      <td class="nom-cell">disturbios da menopausa</td>
+      <td class="plants-cell">355</td>
+    </tr>
+    <tr>
+      <td class="id-cell">299</td>
+      <td class="nom-cell">Disturbios estomacais</td>
+      <td class="plants-cell">324</td>
+    </tr>
+    <tr>
+      <td class="id-cell">300</td>
+      <td class="nom-cell">Disturbios gastronintestinais</td>
+      <td class="plants-cell">455</td>
+    </tr>
+    <tr>
+      <td class="id-cell">301</td>
+      <td class="nom-cell">Disturbios uterinos</td>
+      <td class="plants-cell">510</td>
+    </tr>
+    <tr>
+      <td class="id-cell">302</td>
+      <td class="nom-cell">diurese</td>
+      <td class="plants-cell">172</td>
+    </tr>
+    <tr>
+      <td class="id-cell">303</td>
+      <td class="nom-cell">Diuretica</td>
+      <td class="plants-cell">40 42 46 48 61 72 73 75 79 85 96 102 109 117 118 124 131 140 141 145 151 155 158 159 160 163 166 170 175 182 183 184 192 196 197 202 203 209 219 222 233 236 248 255 272 274 278 279 284 305 310 321 330 336 340 340 342 348 348 359 363 366 366 374 377 395 397 406 416 418 423 425 427 432 436 439 441 443 450 454 461 468 470 494 495 497 506 508 510 511 520 522 532 535 537 33</td>
+    </tr>
+    <tr>
+      <td class="id-cell">304</td>
+      <td class="nom-cell">Doencas cardiacas</td>
+      <td class="plants-cell">425</td>
+    </tr>
+    <tr>
+      <td class="id-cell">305</td>
+      <td class="nom-cell">Doencas da pele</td>
+      <td class="plants-cell">109 209 255 447 506 510 42</td>
+    </tr>
+    <tr>
+      <td class="id-cell">306</td>
+      <td class="nom-cell">Doencas do fígado</td>
+      <td class="plants-cell">477</td>
+    </tr>
+    <tr>
+      <td class="id-cell">307</td>
+      <td class="nom-cell">Doencas do sistema urinario</td>
+      <td class="plants-cell">107</td>
+    </tr>
+    <tr>
+      <td class="id-cell">308</td>
+      <td class="nom-cell">Doenca gastrointestinais</td>
+      <td class="plants-cell">185</td>
+    </tr>
+    <tr>
+      <td class="id-cell">309</td>
+      <td class="nom-cell">Doenças hepática</td>
+      <td class="plants-cell">357</td>
+    </tr>
+    <tr>
+      <td class="id-cell">310</td>
+      <td class="nom-cell">Doencas infecciosas</td>
+      <td class="plants-cell">354</td>
+    </tr>
+    <tr>
+      <td class="id-cell">311</td>
+      <td class="nom-cell">Doenças renais</td>
+      <td class="plants-cell">475 357</td>
+    </tr>
+    <tr>
+      <td class="id-cell">312</td>
+      <td class="nom-cell">Doencas reumáticas</td>
+      <td class="plants-cell">376 432</td>
+    </tr>
+    <tr>
+      <td class="id-cell">313</td>
+      <td class="nom-cell">Dor ciatica</td>
+      <td class="plants-cell">297 229</td>
+    </tr>
+    <tr>
+      <td class="id-cell">314</td>
+      <td class="nom-cell">Dor de cabeça</td>
+      <td class="plants-cell">101 113 161 225 285 311 313 330 333 337 342 416 416 423 81</td>
+    </tr>
+    <tr>
+      <td class="id-cell">315</td>
+      <td class="nom-cell">Dor de dente</td>
+      <td class="plants-cell">170 333 338 429 431 461 477 513 162</td>
+    </tr>
+    <tr>
+      <td class="id-cell">316</td>
+      <td class="nom-cell">Dor de estomago</td>
+      <td class="plants-cell">102</td>
+    </tr>
+    <tr>
+      <td class="id-cell">317</td>
+      <td class="nom-cell">Dor de garganta</td>
+      <td class="plants-cell">421 470 205</td>
+    </tr>
+    <tr>
+      <td class="id-cell">318</td>
+      <td class="nom-cell">Dor de ouvido</td>
+      <td class="plants-cell">477</td>
+    </tr>
+    <tr>
+      <td class="id-cell">319</td>
+      <td class="nom-cell">Dores</td>
+      <td class="plants-cell">268 297 313 429 177</td>
+    </tr>
+    <tr>
+      <td class="id-cell">320</td>
+      <td class="nom-cell">Dores musculares</td>
+      <td class="plants-cell">207</td>
+    </tr>
+    <tr>
+      <td class="id-cell">321</td>
+      <td class="nom-cell">Dores abdominais</td>
+      <td class="plants-cell">365</td>
+    </tr>
+    <tr>
+      <td class="id-cell">322</td>
+      <td class="nom-cell">Dores articulares</td>
+      <td class="plants-cell">111</td>
+    </tr>
+    <tr>
+      <td class="id-cell">323</td>
+      <td class="nom-cell">dores de ouvido</td>
+      <td class="plants-cell">54</td>
+    </tr>
+    <tr>
+      <td class="id-cell">324</td>
+      <td class="nom-cell">Dores do corpo</td>
+      <td class="plants-cell">279 141</td>
+    </tr>
+    <tr>
+      <td class="id-cell">325</td>
+      <td class="nom-cell">dores intestinais</td>
+      <td class="plants-cell">538</td>
+    </tr>
+    <tr>
+      <td class="id-cell">326</td>
+      <td class="nom-cell">dores lombares</td>
+      <td class="plants-cell">160 416 107</td>
+    </tr>
+    <tr>
+      <td class="id-cell">327</td>
+      <td class="nom-cell">dores musculares</td>
+      <td class="plants-cell">111 126 188 192 205 324 441 499 524 109</td>
+    </tr>
+    <tr>
+      <td class="id-cell">328</td>
+      <td class="nom-cell">dores nas costas</td>
+      <td class="plants-cell">499 190</td>
+    </tr>
+    <tr>
+      <td class="id-cell">329</td>
+      <td class="nom-cell">dores nevralgicas</td>
+      <td class="plants-cell">42</td>
+    </tr>
+    <tr>
+      <td class="id-cell">330</td>
+      <td class="nom-cell">Dores nos membros</td>
+      <td class="plants-cell">107</td>
+    </tr>
+    <tr>
+      <td class="id-cell">331</td>
+      <td class="nom-cell">Dores nos ossos</td>
+      <td class="plants-cell">466</td>
+    </tr>
+    <tr>
+      <td class="id-cell">332</td>
+      <td class="nom-cell">Dores renais</td>
+      <td class="plants-cell">107</td>
+    </tr>
+    <tr>
+      <td class="id-cell">333</td>
+      <td class="nom-cell">Dores reumatica</td>
+      <td class="plants-cell">121 149 163 207 275 312 342 381 416 416 491 499 499 524</td>
+    </tr>
+    <tr>
+      <td class="id-cell">334</td>
+      <td class="nom-cell">Eczema</td>
+      <td class="plants-cell">40 48 56 73 75 102 117 126 141 147 158 163 167 196 225 397 441 445 470 508 510 532 39</td>
+    </tr>
+    <tr>
+      <td class="id-cell">335</td>
+      <td class="nom-cell">edema</td>
+      <td class="plants-cell">75 79 158 445 44</td>
+    </tr>
+    <tr>
+      <td class="id-cell">336</td>
+      <td class="nom-cell">elefantiase</td>
+      <td class="plants-cell">83 272</td>
+    </tr>
+    <tr>
+      <td class="id-cell">337</td>
+      <td class="nom-cell">Eliminacao de gases</td>
+      <td class="plants-cell">127</td>
+    </tr>
+    <tr>
+      <td class="id-cell">338</td>
+      <td class="nom-cell">Eliminar sardas</td>
+      <td class="plants-cell">203</td>
+    </tr>
+    <tr>
+      <td class="id-cell">339</td>
+      <td class="nom-cell">Eliminar verrugas</td>
+      <td class="plants-cell">203</td>
+    </tr>
+    <tr>
+      <td class="id-cell">340</td>
+      <td class="nom-cell">emagrecedor</td>
+      <td class="plants-cell">67</td>
+    </tr>
+    <tr>
+      <td class="id-cell">341</td>
+      <td class="nom-cell">Embaracos gastricos</td>
+      <td class="plants-cell">154</td>
+    </tr>
+    <tr>
+      <td class="id-cell">342</td>
+      <td class="nom-cell">Emenagoga</td>
+      <td class="plants-cell">75 79 102 111 118 124 140 162 164 201 203 222 260 255 316 325 342 374 377 416 443 454 477 497 522 61</td>
+    </tr>
+    <tr>
+      <td class="id-cell">343</td>
+      <td class="nom-cell">emetica</td>
+      <td class="plants-cell">136 225 274 294 366 366 372 497 504 508 54</td>
+    </tr>
+    <tr>
+      <td class="id-cell">344</td>
+      <td class="nom-cell">emoliente</td>
+      <td class="plants-cell">79 101 140 182 283 359 361 402 418 443 445 487 508 532 535 48</td>
+    </tr>
+    <tr>
+      <td class="id-cell">345</td>
+      <td class="nom-cell">Energetico</td>
+      <td class="plants-cell">257</td>
+    </tr>
+    <tr>
+      <td class="id-cell">346</td>
+      <td class="nom-cell">Energetico estimulante</td>
+      <td class="plants-cell">168</td>
+    </tr>
+    <tr>
+      <td class="id-cell">347</td>
+      <td class="nom-cell">Enfermidades febris</td>
+      <td class="plants-cell">234</td>
+    </tr>
+    <tr>
+      <td class="id-cell">348</td>
+      <td class="nom-cell">Enterite aguda</td>
+      <td class="plants-cell">443</td>
+    </tr>
+    <tr>
+      <td class="id-cell">349</td>
+      <td class="nom-cell">Enterite membranosa</td>
+      <td class="plants-cell">170</td>
+    </tr>
+    <tr>
+      <td class="id-cell">350</td>
+      <td class="nom-cell">enterites</td>
+      <td class="plants-cell">51</td>
+    </tr>
+    <tr>
+      <td class="id-cell">351</td>
+      <td class="nom-cell">enterocolite</td>
+      <td class="plants-cell">475 174</td>
+    </tr>
+    <tr>
+      <td class="id-cell">352</td>
+      <td class="nom-cell">Enxaqueca</td>
+      <td class="plants-cell">138 161 304 312 457 483 535 69</td>
+    </tr>
+    <tr>
+      <td class="id-cell">353</td>
+      <td class="nom-cell">Epilepsia</td>
+      <td class="plants-cell">102 111 121 259 300 425 511 83</td>
+    </tr>
+    <tr>
+      <td class="id-cell">354</td>
+      <td class="nom-cell">Erisipela</td>
+      <td class="plants-cell">40 94 95 107 225 227 336 383 397 419 423 441 445 532 39</td>
+    </tr>
+    <tr>
+      <td class="id-cell">355</td>
+      <td class="nom-cell">Erupcoes cutaneas</td>
+      <td class="plants-cell">40 404</td>
+    </tr>
+    <tr>
+      <td class="id-cell">356</td>
+      <td class="nom-cell">escabiose</td>
+      <td class="plants-cell">236</td>
+    </tr>
+    <tr>
+      <td class="id-cell">357</td>
+      <td class="nom-cell">escamacoes</td>
+      <td class="plants-cell">163 147</td>
+    </tr>
+    <tr>
+      <td class="id-cell">358</td>
+      <td class="nom-cell">escaras</td>
+      <td class="plants-cell">141 158 543 121</td>
+    </tr>
+    <tr>
+      <td class="id-cell">359</td>
+      <td class="nom-cell">Esclerodermias</td>
+      <td class="plants-cell">197</td>
+    </tr>
+    <tr>
+      <td class="id-cell">360</td>
+      <td class="nom-cell">Escorbuto</td>
+      <td class="plants-cell">167 201 284 113</td>
+    </tr>
+    <tr>
+      <td class="id-cell">361</td>
+      <td class="nom-cell">Escoriacoes</td>
+      <td class="plants-cell">297</td>
+    </tr>
+    <tr>
+      <td class="id-cell">362</td>
+      <td class="nom-cell">escrofula</td>
+      <td class="plants-cell">495 497 294</td>
+    </tr>
+    <tr>
+      <td class="id-cell">363</td>
+      <td class="nom-cell">escrofulose</td>
+      <td class="plants-cell">196 192</td>
+    </tr>
+    <tr>
+      <td class="id-cell">364</td>
+      <td class="nom-cell">Esfoladuras</td>
+      <td class="plants-cell">524</td>
+    </tr>
+    <tr>
+      <td class="id-cell">365</td>
+      <td class="nom-cell">espamogenica</td>
+      <td class="plants-cell">302</td>
+    </tr>
+    <tr>
+      <td class="id-cell">366</td>
+      <td class="nom-cell">Espasmolitica</td>
+      <td class="plants-cell">78 81 155 302 310 315 317 324 330 433 497 67</td>
+    </tr>
+    <tr>
+      <td class="id-cell">367</td>
+      <td class="nom-cell">espasmos</td>
+      <td class="plants-cell">77 335 432 508 511 523 67</td>
+    </tr>
+    <tr>
+      <td class="id-cell">368</td>
+      <td class="nom-cell">Espasmos intestinais</td>
+      <td class="plants-cell">174</td>
+    </tr>
+    <tr>
+      <td class="id-cell">369</td>
+      <td class="nom-cell">espinhas</td>
+      <td class="plants-cell">197 427 470</td>
+    </tr>
+    <tr>
+      <td class="id-cell">370</td>
+      <td class="nom-cell">esplenicas</td>
+      <td class="plants-cell">281</td>
+    </tr>
+    <tr>
+      <td class="id-cell">371</td>
+      <td class="nom-cell">esquistossomose</td>
+      <td class="plants-cell">419 527 530 151</td>
+    </tr>
+    <tr>
+      <td class="id-cell">372</td>
+      <td class="nom-cell">Estancar o sangramento</td>
+      <td class="plants-cell">243</td>
+    </tr>
+    <tr>
+      <td class="id-cell">373</td>
+      <td class="nom-cell">Estimula a lactacao</td>
+      <td class="plants-cell">131</td>
+    </tr>
+    <tr>
+      <td class="id-cell">374</td>
+      <td class="nom-cell">estimulante</td>
+      <td class="plants-cell">90 113 151 162 236 238 304 305 316 325 366 366 377 419 421 441 457 472 483 483 494 523 537 90</td>
+    </tr>
+    <tr>
+      <td class="id-cell">375</td>
+      <td class="nom-cell">Estimulante circulatorio</td>
+      <td class="plants-cell">522</td>
+    </tr>
+    <tr>
+      <td class="id-cell">376</td>
+      <td class="nom-cell">Estimulante cutaneo</td>
+      <td class="plants-cell">73</td>
+    </tr>
+    <tr>
+      <td class="id-cell">377</td>
+      <td class="nom-cell">estimulante da. Digestao</td>
+      <td class="plants-cell">324 407</td>
+    </tr>
+    <tr>
+      <td class="id-cell">378</td>
+      <td class="nom-cell">Estimulante sudorese</td>
+      <td class="plants-cell">40</td>
+    </tr>
+    <tr>
+      <td class="id-cell">379</td>
+      <td class="nom-cell">Estimulante das funções do baço</td>
+      <td class="plants-cell">423</td>
+    </tr>
+    <tr>
+      <td class="id-cell">380</td>
+      <td class="nom-cell">Estimulante das funções estomacais</td>
+      <td class="plants-cell">423</td>
+    </tr>
+    <tr>
+      <td class="id-cell">381</td>
+      <td class="nom-cell">Estimulante gastrointestinais</td>
+      <td class="plants-cell">532</td>
+    </tr>
+    <tr>
+      <td class="id-cell">382</td>
+      <td class="nom-cell">Estimulante das funções hepáticas</td>
+      <td class="plants-cell">209 423 126</td>
+    </tr>
+    <tr>
+      <td class="id-cell">383</td>
+      <td class="nom-cell">Estimulante das funções pancreaticas</td>
+      <td class="plants-cell">423</td>
+    </tr>
+    <tr>
+      <td class="id-cell">384</td>
+      <td class="nom-cell">Estimulante digestiva</td>
+      <td class="plants-cell">319 532 544 78</td>
+    </tr>
+    <tr>
+      <td class="id-cell">385</td>
+      <td class="nom-cell">Estimulante do aparelho genito urinario</td>
+      <td class="plants-cell">506</td>
+    </tr>
+    <tr>
+      <td class="id-cell">386</td>
+      <td class="nom-cell">Estimulante do apetite</td>
+      <td class="plants-cell">165 339 455</td>
+    </tr>
+    <tr>
+      <td class="id-cell">387</td>
+      <td class="nom-cell">Estimulante do musculo esqueletico</td>
+      <td class="plants-cell">259</td>
+    </tr>
+    <tr>
+      <td class="id-cell">388</td>
+      <td class="nom-cell">estimulante do peristaltismo</td>
+      <td class="plants-cell">473</td>
+    </tr>
+    <tr>
+      <td class="id-cell">389</td>
+      <td class="nom-cell">Estimulante do sistema imunologico celular</td>
+      <td class="plants-cell">134</td>
+    </tr>
+    <tr>
+      <td class="id-cell">390</td>
+      <td class="nom-cell">Estimulante do sistema linfatico</td>
+      <td class="plants-cell">134</td>
+    </tr>
+    <tr>
+      <td class="id-cell">391</td>
+      <td class="nom-cell">Estimulante do SNC</td>
+      <td class="plants-cell">363</td>
+    </tr>
+    <tr>
+      <td class="id-cell">392</td>
+      <td class="nom-cell">Estimulante hepatobiliar</td>
+      <td class="plants-cell">316</td>
+    </tr>
+    <tr>
+      <td class="id-cell">393</td>
+      <td class="nom-cell">estimulante respiratorio</td>
+      <td class="plants-cell">54</td>
+    </tr>
+    <tr>
+      <td class="id-cell">394</td>
+      <td class="nom-cell">Estimulante uterino</td>
+      <td class="plants-cell">357</td>
+    </tr>
+    <tr>
+      <td class="id-cell">395</td>
+      <td class="nom-cell">Estimulantes da memoria</td>
+      <td class="plants-cell">379</td>
+    </tr>
+    <tr>
+      <td class="id-cell">396</td>
+      <td class="nom-cell">Estimulante a lacatacao</td>
+      <td class="plants-cell">81</td>
+    </tr>
+    <tr>
+      <td class="id-cell">397</td>
+      <td class="nom-cell">Estimular o apetite</td>
+      <td class="plants-cell">284 162</td>
+    </tr>
+    <tr>
+      <td class="id-cell">398</td>
+      <td class="nom-cell">Estomacal</td>
+      <td class="plants-cell">163 245 488 490 154</td>
+    </tr>
+    <tr>
+      <td class="id-cell">399</td>
+      <td class="nom-cell">estomaquica</td>
+      <td class="plants-cell">61 69 102 117 122 156 194 197 203 227 236 242 315 317 342 359 361 377 397 419 461 490 522 538 49</td>
+    </tr>
+    <tr>
+      <td class="id-cell">400</td>
+      <td class="nom-cell">estomatite</td>
+      <td class="plants-cell">69 184 297 427 455 475 42</td>
+    </tr>
+    <tr>
+      <td class="id-cell">401</td>
+      <td class="nom-cell">estress</td>
+      <td class="plants-cell">52</td>
+    </tr>
+    <tr>
+      <td class="id-cell">402</td>
+      <td class="nom-cell">Estrogenica</td>
+      <td class="plants-cell">302</td>
+    </tr>
+    <tr>
+      <td class="id-cell">403</td>
+      <td class="nom-cell">Eupeptica</td>
+      <td class="plants-cell">107 337 491 523 71</td>
+    </tr>
+    <tr>
+      <td class="id-cell">404</td>
+      <td class="nom-cell">Excesse de muco</td>
+      <td class="plants-cell">131</td>
+    </tr>
+    <tr>
+      <td class="id-cell">405</td>
+      <td class="nom-cell">Excitante</td>
+      <td class="plants-cell">54 71 72 147 160 337 387 51</td>
+    </tr>
+    <tr>
+      <td class="id-cell">406</td>
+      <td class="nom-cell">espectorante</td>
+      <td class="plants-cell">37 72 81 83 145 149 170 192 255 35</td>
+    </tr>
+    <tr>
+      <td class="id-cell">407</td>
+      <td class="nom-cell">Exprectorante na bronquite cronica</td>
+      <td class="plants-cell">538</td>
+    </tr>
+    <tr>
+      <td class="id-cell">408</td>
+      <td class="nom-cell">Extrasistole</td>
+      <td class="plants-cell">281</td>
+    </tr>
+    <tr>
+      <td class="id-cell">409</td>
+      <td class="nom-cell">Fadiga</td>
+      <td class="plants-cell">257 445 455 457 238</td>
+    </tr>
+    <tr>
+      <td class="id-cell">410</td>
+      <td class="nom-cell">Fadiga muscular</td>
+      <td class="plants-cell">90</td>
+    </tr>
+    <tr>
+      <td class="id-cell">411</td>
+      <td class="nom-cell">Falta de apetite</td>
+      <td class="plants-cell">102</td>
+    </tr>
+    <tr>
+      <td class="id-cell">412</td>
+      <td class="nom-cell">Falta de memoria</td>
+      <td class="plants-cell">355</td>
+    </tr>
+    <tr>
+      <td class="id-cell">413</td>
+      <td class="nom-cell">Fala de menstruacao</td>
+      <td class="plants-cell">102</td>
+    </tr>
+    <tr>
+      <td class="id-cell">414</td>
+      <td class="nom-cell">faringite</td>
+      <td class="plants-cell">134 141 180 350 427 461 42</td>
+    </tr>
+    <tr>
+      <td class="id-cell">415</td>
+      <td class="nom-cell">Febre</td>
+      <td class="plants-cell">37 77 81 83 87 102 121 124 131 172 177 229 236 268 299 302 313 321 333 337 357 359 371 423 429 432 436 455 455 463 468 475 477 482 490 491 492 495 497 523 532 532 538 35</td>
+    </tr>
+    <tr>
+      <td class="id-cell">416</td>
+      <td class="nom-cell">Febre intermitente</td>
+      <td class="plants-cell">404</td>
+    </tr>
+    <tr>
+      <td class="id-cell">417</td>
+      <td class="nom-cell">Febre tifoide</td>
+      <td class="plants-cell">377 310</td>
+    </tr>
+    <tr>
+      <td class="id-cell">418</td>
+      <td class="nom-cell">Febre amarela</td>
+      <td class="plants-cell">497</td>
+    </tr>
+    <tr>
+      <td class="id-cell">419</td>
+      <td class="nom-cell">Febres infantis</td>
+      <td class="plants-cell">387</td>
+    </tr>
+    <tr>
+      <td class="id-cell">420</td>
+      <td class="nom-cell">Febres intermitentes</td>
+      <td class="plants-cell">281 387 459 515 51</td>
+    </tr>
+    <tr>
+      <td class="id-cell">421</td>
+      <td class="nom-cell">febrifuga</td>
+      <td class="plants-cell">72 77 82 85 107 122 140 141 148 194 274 278 305 310 311 322 347 359 361 371 372 374 377 387 401 454 455 470 473 477 482 483 488 491 494 51</td>
+    </tr>
+    <tr>
+      <td class="id-cell">422</td>
+      <td class="nom-cell">Feridas</td>
+      <td class="plants-cell">63 75 83 87 107 109 121 126 140 144 158 184 192 197 219 445 459 508 532 56</td>
+    </tr>
+    <tr>
+      <td class="id-cell">423</td>
+      <td class="nom-cell">Feridas expostas</td>
+      <td class="plants-cell">61</td>
+    </tr>
+    <tr>
+      <td class="id-cell">424</td>
+      <td class="nom-cell">Feridas externas</td>
+      <td class="plants-cell">285</td>
+    </tr>
+    <tr>
+      <td class="id-cell">425</td>
+      <td class="nom-cell">ferimentos</td>
+      <td class="plants-cell">124 134 252 315 337 383 481 69</td>
+    </tr>
+    <tr>
+      <td class="id-cell">426</td>
+      <td class="nom-cell">Ferimentos na pele</td>
+      <td class="plants-cell">64</td>
+    </tr>
+    <tr>
+      <td class="id-cell">427</td>
+      <td class="nom-cell">Ferimento superficiais da pele</td>
+      <td class="plants-cell">105</td>
+    </tr>
+    <tr>
+      <td class="id-cell">428</td>
+      <td class="nom-cell">filariose</td>
+      <td class="plants-cell">423 56</td>
+    </tr>
+    <tr>
+      <td class="id-cell">429</td>
+      <td class="nom-cell">fissuras</td>
+      <td class="plants-cell">75</td>
+    </tr>
+    <tr>
+      <td class="id-cell">430</td>
+      <td class="nom-cell">Fissuras anais</td>
+      <td class="plants-cell">109</td>
+    </tr>
+    <tr>
+      <td class="id-cell">431</td>
+      <td class="nom-cell">Flatulencia</td>
+      <td class="plants-cell">75 102 109 154 324 483 72</td>
+    </tr>
+    <tr>
+      <td class="id-cell">432</td>
+      <td class="nom-cell">Fluidificante</td>
+      <td class="plants-cell">421</td>
+    </tr>
+    <tr>
+      <td class="id-cell">433</td>
+      <td class="nom-cell">fortificante</td>
+      <td class="plants-cell">205</td>
+    </tr>
+    <tr>
+      <td class="id-cell">434</td>
+      <td class="nom-cell">fotodermatites</td>
+      <td class="plants-cell">75</td>
+    </tr>
+    <tr>
+      <td class="id-cell">435</td>
+      <td class="nom-cell">Fraqueza</td>
+      <td class="plants-cell">330</td>
+    </tr>
+    <tr>
+      <td class="id-cell">436</td>
+      <td class="nom-cell">Fraqueza geral</td>
+      <td class="plants-cell">259</td>
+    </tr>
+    <tr>
+      <td class="id-cell">437</td>
+      <td class="nom-cell">Fraqueza pulmonar</td>
+      <td class="plants-cell">257</td>
+    </tr>
+    <tr>
+      <td class="id-cell">438</td>
+      <td class="nom-cell">Fraqueza sexual</td>
+      <td class="plants-cell">238</td>
+    </tr>
+    <tr>
+      <td class="id-cell">439</td>
+      <td class="nom-cell">Fraturas</td>
+      <td class="plants-cell">61 49</td>
+    </tr>
+    <tr>
+      <td class="id-cell">440</td>
+      <td class="nom-cell">Fraturas osseas</td>
+      <td class="plants-cell">33</td>
+    </tr>
+    <tr>
+      <td class="id-cell">441</td>
+      <td class="nom-cell">Funcoes digestivas</td>
+      <td class="plants-cell">78</td>
+    </tr>
+    <tr>
+      <td class="id-cell">442</td>
+      <td class="nom-cell">Funcoes gastrintestinais</td>
+      <td class="plants-cell">312</td>
+    </tr>
+    <tr>
+      <td class="id-cell">443</td>
+      <td class="nom-cell">Funcoes glandulares</td>
+      <td class="plants-cell">52</td>
+    </tr>
+    <tr>
+      <td class="id-cell">444</td>
+      <td class="nom-cell">Funcoes hepaticas</td>
+      <td class="plants-cell">449</td>
+    </tr>
+    <tr>
+      <td class="id-cell">445</td>
+      <td class="nom-cell">Funcoes nervosas</td>
+      <td class="plants-cell">52</td>
+    </tr>
+    <tr>
+      <td class="id-cell">446</td>
+      <td class="nom-cell">Furunculos</td>
+      <td class="plants-cell">219 225 360 470 508 510 69</td>
+    </tr>
+    <tr>
+      <td class="id-cell">447</td>
+      <td class="nom-cell">garganta</td>
+      <td class="plants-cell">295 510</td>
+    </tr>
+    <tr>
+      <td class="id-cell">448</td>
+      <td class="nom-cell">Garganta inflamada</td>
+      <td class="plants-cell">122</td>
+    </tr>
+    <tr>
+      <td class="id-cell">449</td>
+      <td class="nom-cell">gases</td>
+      <td class="plants-cell">154 330 138</td>
+    </tr>
+    <tr>
+      <td class="id-cell">450</td>
+      <td class="nom-cell">Gases intestinais</td>
+      <td class="plants-cell">109 165 321 339 74</td>
+    </tr>
+    <tr>
+      <td class="id-cell">451</td>
+      <td class="nom-cell">Gastralgia</td>
+      <td class="plants-cell">307 336 508 140</td>
+    </tr>
+    <tr>
+      <td class="id-cell">452</td>
+      <td class="nom-cell">Gastrite</td>
+      <td class="plants-cell">64 126 210 223 321 328 368 407 479 499 59</td>
+    </tr>
+    <tr>
+      <td class="id-cell">453</td>
+      <td class="nom-cell">Gastrite cronica</td>
+      <td class="plants-cell">515 210</td>
+    </tr>
+    <tr>
+      <td class="id-cell">454</td>
+      <td class="nom-cell">Gastrointestinal</td>
+      <td class="plants-cell">490 398</td>
+    </tr>
+    <tr>
+      <td class="id-cell">455</td>
+      <td class="nom-cell">Gengivite</td>
+      <td class="plants-cell">126 196 281 350 418 427 42</td>
+    </tr>
+    <tr>
+      <td class="id-cell">456</td>
+      <td class="nom-cell">gonorreia</td>
+      <td class="plants-cell">222 291 495 510 33</td>
+    </tr>
+    <tr>
+      <td class="id-cell">457</td>
+      <td class="nom-cell">gota</td>
+      <td class="plants-cell">75 83 102 117 130 160 188 209 225 302 305 309 316 332 368 acafroa 381 436 482 40</td>
+    </tr>
+    <tr>
+      <td class="id-cell">458</td>
+      <td class="nom-cell">Gota reumatica</td>
+      <td class="plants-cell">42</td>
+    </tr>
+    <tr>
+      <td class="id-cell">459</td>
+      <td class="nom-cell">gripe</td>
+      <td class="plants-cell">44 134 140 178 241 234 267 268 275 302 304 35</td>
+    </tr>
+    <tr>
+      <td class="id-cell">460</td>
+      <td class="nom-cell">hanseniase</td>
+      <td class="plants-cell">39</td>
+    </tr>
+    <tr>
+      <td class="id-cell">461</td>
+      <td class="nom-cell">Hematuria</td>
+      <td class="plants-cell">336 257</td>
+    </tr>
+    <tr>
+      <td class="id-cell">462</td>
+      <td class="nom-cell">Hemoptise</td>
+      <td class="plants-cell">257 443 477 166</td>
+    </tr>
+    <tr>
+      <td class="id-cell">463</td>
+      <td class="nom-cell">Hemorragia uterina</td>
+      <td class="plants-cell">242 305 355 537 63</td>
+    </tr>
+    <tr>
+      <td class="id-cell">464</td>
+      <td class="nom-cell">Hemorragia</td>
+      <td class="plants-cell">257 279 295 252</td>
+    </tr>
+    <tr>
+      <td class="id-cell">465</td>
+      <td class="nom-cell">Hemorragias nasais</td>
+      <td class="plants-cell">33</td>
+    </tr>
+    <tr>
+      <td class="id-cell">466</td>
+      <td class="nom-cell">Hemorragias uterinas</td>
+      <td class="plants-cell">374</td>
+    </tr>
+    <tr>
+      <td class="id-cell">467</td>
+      <td class="nom-cell">Hemorroida</td>
+      <td class="plants-cell">64 109 130 185 242 283 336 383 399 399 429 440 441 443 464 470 511 59</td>
+    </tr>
+    <tr>
+      <td class="id-cell">468</td>
+      <td class="nom-cell">Hemorroidas inflamadas</td>
+      <td class="plants-cell">231 105</td>
+    </tr>
+    <tr>
+      <td class="id-cell">469</td>
+      <td class="nom-cell">hemostatica</td>
+      <td class="plants-cell">199 217 243 248 274 291 427 479 510 522 74</td>
+    </tr>
+    <tr>
+      <td class="id-cell">470</td>
+      <td class="nom-cell">Hepaticas</td>
+      <td class="plants-cell">122 158 163 404 532 117</td>
+    </tr>
+    <tr>
+      <td class="id-cell">471</td>
+      <td class="nom-cell">hepatite</td>
+      <td class="plants-cell">155 281 395 490 515 532 124</td>
+    </tr>
+    <tr>
+      <td class="id-cell">472</td>
+      <td class="nom-cell">Hepatopancreatite</td>
+      <td class="plants-cell">421</td>
+    </tr>
+    <tr>
+      <td class="id-cell">473</td>
+      <td class="nom-cell">Hepatoprotetora</td>
+      <td class="plants-cell">250 44</td>
+    </tr>
+    <tr>
+      <td class="id-cell">474</td>
+      <td class="nom-cell">Hernias</td>
+      <td class="plants-cell">472 42</td>
+    </tr>
+    <tr>
+      <td class="id-cell">475</td>
+      <td class="nom-cell">herpes</td>
+      <td class="plants-cell">117 126 140 174 225 243 260 392 44</td>
+    </tr>
+    <tr>
+      <td class="id-cell">476</td>
+      <td class="nom-cell">Herpes genital</td>
+      <td class="plants-cell">99 65</td>
+    </tr>
+    <tr>
+      <td class="id-cell">477</td>
+      <td class="nom-cell">Herpes labial</td>
+      <td class="plants-cell">65 429 506</td>
+    </tr>
+    <tr>
+      <td class="id-cell">478</td>
+      <td class="nom-cell">Hidragoga</td>
+      <td class="plants-cell">454</td>
+    </tr>
+    <tr>
+      <td class="id-cell">479</td>
+      <td class="nom-cell">hidratante</td>
+      <td class="plants-cell">185</td>
+    </tr>
+    <tr>
+      <td class="id-cell">480</td>
+      <td class="nom-cell">Hidropisia</td>
+      <td class="plants-cell">77 102 124 170 198 229 333 337 372 416 425 461 475 491 515 536 48</td>
+    </tr>
+    <tr>
+      <td class="id-cell">481</td>
+      <td class="nom-cell">Hiperacidez gastrica</td>
+      <td class="plants-cell">210</td>
+    </tr>
+    <tr>
+      <td class="id-cell">482</td>
+      <td class="nom-cell">Hipertensao</td>
+      <td class="plants-cell">159 330 427 495 513 52</td>
+    </tr>
+    <tr>
+      <td class="id-cell">483</td>
+      <td class="nom-cell">Hipertensao arterial</td>
+      <td class="plants-cell">348 387 429</td>
+    </tr>
+    <tr>
+      <td class="id-cell">484</td>
+      <td class="nom-cell">Hipertensiva</td>
+      <td class="plants-cell">497 316</td>
+    </tr>
+    <tr>
+      <td class="id-cell">485</td>
+      <td class="nom-cell">Hipocolesteremiantes</td>
+      <td class="plants-cell">272</td>
+    </tr>
+    <tr>
+      <td class="id-cell">486</td>
+      <td class="nom-cell">Hipocondria</td>
+      <td class="plants-cell">238 168</td>
+    </tr>
+    <tr>
+      <td class="id-cell">487</td>
+      <td class="nom-cell">hipoglicemia</td>
+      <td class="plants-cell">252 52</td>
+    </tr>
+    <tr>
+      <td class="id-cell">488</td>
+      <td class="nom-cell">hipoglicemiante</td>
+      <td class="plants-cell">75 85 159 214 302 457 485 44</td>
+    </tr>
+    <tr>
+      <td class="id-cell">489</td>
+      <td class="nom-cell">Hipoglicêmico</td>
+      <td class="plants-cell">436 497 522</td>
+    </tr>
+    <tr>
+      <td class="id-cell">490</td>
+      <td class="nom-cell">hipotensiva</td>
+      <td class="plants-cell">497 522 395</td>
+    </tr>
+    <tr>
+      <td class="id-cell">491</td>
+      <td class="nom-cell">Hipotensora</td>
+      <td class="plants-cell">54 159 202 233 236 259 302 357 366 418 468 44</td>
+    </tr>
+    <tr>
+      <td class="id-cell">492</td>
+      <td class="nom-cell">hipotermiante</td>
+      <td class="plants-cell">259</td>
+    </tr>
+    <tr>
+      <td class="id-cell">493</td>
+      <td class="nom-cell">Hipotermica</td>
+      <td class="plants-cell">497</td>
+    </tr>
+    <tr>
+      <td class="id-cell">494</td>
+      <td class="nom-cell">hipotonia</td>
+      <td class="plants-cell">457</td>
+    </tr>
+    <tr>
+      <td class="id-cell">495</td>
+      <td class="nom-cell">histeria</td>
+      <td class="plants-cell">535 83</td>
+    </tr>
+    <tr>
+      <td class="id-cell">496</td>
+      <td class="nom-cell">Histerismo.</td>
+      <td class="plants-cell">154</td>
+    </tr>
+    <tr>
+      <td class="id-cell">497</td>
+      <td class="nom-cell">ictericia</td>
+      <td class="plants-cell">124 155 174 198 209 268 395 461 515 75</td>
+    </tr>
+    <tr>
+      <td class="id-cell">498</td>
+      <td class="nom-cell">impotencia</td>
+      <td class="plants-cell">398 52</td>
+    </tr>
+    <tr>
+      <td class="id-cell">499</td>
+      <td class="nom-cell">Impotencia sexual</td>
+      <td class="plants-cell">355</td>
+    </tr>
+    <tr>
+      <td class="id-cell">500</td>
+      <td class="nom-cell">imunoestimulante</td>
+      <td class="plants-cell">134 252 97</td>
+    </tr>
+    <tr>
+      <td class="id-cell">501</td>
+      <td class="nom-cell">Imunomodulador</td>
+      <td class="plants-cell">322</td>
+    </tr>
+    <tr>
+      <td class="id-cell">502</td>
+      <td class="nom-cell">imunossupressivas</td>
+      <td class="plants-cell">223</td>
+    </tr>
+    <tr>
+      <td class="id-cell">503</td>
+      <td class="nom-cell">Inapetencia</td>
+      <td class="plants-cell">163</td>
+    </tr>
+    <tr>
+      <td class="id-cell">504</td>
+      <td class="nom-cell">Indigestion</td>
+      <td class="plants-cell">79 102 187 324 332 455 72</td>
+    </tr>
+    <tr>
+      <td class="id-cell">505</td>
+      <td class="nom-cell">Indigestion flatulenta</td>
+      <td class="plants-cell">75 468 482 </td>
+    </tr>
+    <tr>
+      <td class="id-cell">506</td>
+      <td class="nom-cell">Indisposicao</td>
+      <td class="plants-cell">441 109</td>
+    </tr>
+    <tr>
+      <td class="id-cell">507</td>
+      <td class="nom-cell">Indisposions renais</td>
+      <td class="plants-cell">35</td>
+    </tr>
+    <tr>
+      <td class="id-cell">508</td>
+      <td class="nom-cell">Indutora do sono</td>
+      <td class="plants-cell">245</td>
+    </tr>
+    <tr>
+      <td class="id-cell">509</td>
+      <td class="nom-cell">Infeccao</td>
+      <td class="plants-cell">243 383 207</td>
+    </tr>
+    <tr>
+      <td class="id-cell">510</td>
+      <td class="nom-cell">Infeccao da prostata</td>
+      <td class="plants-cell">257</td>
+    </tr>
+    <tr>
+      <td class="id-cell">511</td>
+      <td class="nom-cell">Infeccas das vias respiratorias</td>
+      <td class="plants-cell">109</td>
+    </tr>
+    <tr>
+      <td class="id-cell">512</td>
+      <td class="nom-cell">Infeccao da bexiga</td>
+      <td class="plants-cell">257</td>
+    </tr>
+    <tr>
+      <td class="id-cell">513</td>
+      <td class="nom-cell">Infectes da garganta</td>
+      <td class="plants-cell">69</td>
+    </tr>
+    <tr>
+      <td class="id-cell">514</td>
+      <td class="nom-cell">Infeccoes da mucosa</td>
+      <td class="plants-cell">44</td>
+    </tr>
+    <tr>
+      <td class="id-cell">515</td>
+      <td class="nom-cell">Infeccoes da pele</td>
+      <td class="plants-cell">69 201 332 44</td>
+    </tr>
+    <tr>
+      <td class="id-cell">516</td>
+      <td class="nom-cell">Infeccoes das vias respiratorias superiores</td>
+      <td class="plants-cell">427</td>
+    </tr>
+    <tr>
+      <td class="id-cell">517</td>
+      <td class="nom-cell">Infectes do aparelho digestivo</td>
+      <td class="plants-cell">377</td>
+    </tr>
+    <tr>
+      <td class="id-cell">518</td>
+      <td class="nom-cell">Infeccoes do trato urinario</td>
+      <td class="plants-cell">151 134</td>
+    </tr>
+    <tr>
+      <td class="id-cell">519</td>
+      <td class="nom-cell">Infeccoes dos rins</td>
+      <td class="plants-cell">33</td>
+    </tr>
+    <tr>
+      <td class="id-cell">520</td>
+      <td class="nom-cell">Infeccoes fungicas</td>
+      <td class="plants-cell">257</td>
+    </tr>
+    <tr>
+      <td class="id-cell">521</td>
+      <td class="nom-cell">Infeccoes intestinais</td>
+      <td class="plants-cell">353 445</td>
+    </tr>
+    <tr>
+      <td class="id-cell">522</td>
+      <td class="nom-cell">Infectes pulmonares</td>
+      <td class="plants-cell">278</td>
+    </tr>
+    <tr>
+      <td class="id-cell">523</td>
+      <td class="nom-cell">infeccoes respiratorias</td>
+      <td class="plants-cell">243</td>
+    </tr>
+    <tr>
+      <td class="id-cell">524</td>
+      <td class="nom-cell">Infectes urinarias</td>
+      <td class="plants-cell">124</td>
+    </tr>
+    <tr>
+      <td class="id-cell">525</td>
+      <td class="nom-cell">Infeccoes vaginais</td>
+      <td class="plants-cell">124</td>
+    </tr>
+    <tr>
+      <td class="id-cell">526</td>
+      <td class="nom-cell">Infertilidade</td>
+      <td class="plants-cell">52</td>
+    </tr>
+    <tr>
+      <td class="id-cell">527</td>
+      <td class="nom-cell">Infertilidade feminina</td>
+      <td class="plants-cell">87</td>
+    </tr>
+    <tr>
+      <td class="id-cell">528</td>
+      <td class="nom-cell">inflamacao</td>
+      <td class="plants-cell">124 185 199 213 219 279 297 310 360 383 406 427 429 445 459 513 517 97</td>
+    </tr>
+    <tr>
+      <td class="id-cell">529</td>
+      <td class="nom-cell">Inflamacao da bexiga</td>
+      <td class="plants-cell">366 402 436 42</td>
+    </tr>
+    <tr>
+      <td class="id-cell">530</td>
+      <td class="nom-cell">Inflamacao da garganta</td>
+      <td class="plants-cell">64 65 81 149 378 544 59</td>
+    </tr>
+    <tr>
+      <td class="id-cell">531</td>
+      <td class="nom-cell">Inflamacao da vésicule</td>
+      <td class="plants-cell">165</td>
+    </tr>
+    <tr>
+      <td class="id-cell">532</td>
+      <td class="nom-cell">Inflamacao do baço</td>
+      <td class="plants-cell">515</td>
+    </tr>
+    <tr>
+      <td class="id-cell">533</td>
+      <td class="nom-cell">Inflamacao do figado</td>
+      <td class="plants-cell">241</td>
+    </tr>
+    <tr>
+      <td class="id-cell">534</td>
+      <td class="nom-cell">Inflamacao intestinal</td>
+      <td class="plants-cell">172</td>
+    </tr>
+    <tr>
+      <td class="id-cell">535</td>
+      <td class="nom-cell">Inflamacao na bexiga</td>
+      <td class="plants-cell">154</td>
+    </tr>
+    <tr>
+      <td class="id-cell">536</td>
+      <td class="nom-cell">Inflamacao na boca</td>
+      <td class="plants-cell">81 134 149 202 313 315 65</td>
+    </tr>
+    <tr>
+      <td class="id-cell">537</td>
+      <td class="nom-cell">Inflamacao no rins</td>
+      <td class="plants-cell">154</td>
+    </tr>
+    <tr>
+      <td class="id-cell">538</td>
+      <td class="nom-cell">Inflamacao no utero</td>
+      <td class="plants-cell">154</td>
+    </tr>
+    <tr>
+      <td class="id-cell">539</td>
+      <td class="nom-cell">Inflamacao urinaria</td>
+      <td class="plants-cell">305</td>
+    </tr>
+    <tr>
+      <td class="id-cell">540</td>
+      <td class="nom-cell">Inflamacao articulares</td>
+      <td class="plants-cell">160</td>
+    </tr>
+    <tr>
+      <td class="id-cell">541</td>
+      <td class="nom-cell">Inflamacao da pele</td>
+      <td class="plants-cell">477 175</td>
+    </tr>
+    <tr>
+      <td class="id-cell">542</td>
+      <td class="nom-cell">Inflamacao das gengivas</td>
+      <td class="plants-cell">64 59</td>
+    </tr>
+    <tr>
+      <td class="id-cell">543</td>
+      <td class="nom-cell">Inflamacao das pernas</td>
+      <td class="plants-cell">423</td>
+    </tr>
+    <tr>
+      <td class="id-cell">544</td>
+      <td class="nom-cell">Inflamacao gerais</td>
+      <td class="plants-cell">240</td>
+    </tr>
+    <tr>
+      <td class="id-cell">545</td>
+      <td class="nom-cell">Inflamacao hepaticas</td>
+      <td class="plants-cell">281</td>
+    </tr>
+    <tr>
+      <td class="id-cell">546</td>
+      <td class="nom-cell">Inflamacao na faringe</td>
+      <td class="plants-cell">313</td>
+    </tr>
+    <tr>
+      <td class="id-cell">547</td>
+      <td class="nom-cell">Inflamacao nas gengivas</td>
+      <td class="plants-cell">421</td>
+    </tr>
+    <tr>
+      <td class="id-cell">548</td>
+      <td class="nom-cell">Inflamacao oculares</td>
+      <td class="plants-cell">402</td>
+    </tr>
+    <tr>
+      <td class="id-cell">549</td>
+      <td class="nom-cell">Inflamacao pulmonares</td>
+      <td class="plants-cell">37</td>
+    </tr>
+    <tr>
+      <td class="id-cell">550</td>
+      <td class="nom-cell">Inflamacao purulentas</td>
+      <td class="plants-cell">126</td>
+    </tr>
+    <tr>
+      <td class="id-cell">551</td>
+      <td class="nom-cell">Inflamacoes reumaticas</td>
+      <td class="plants-cell">532 94</td>
+    </tr>
+    <tr>
+      <td class="id-cell">552</td>
+      <td class="nom-cell">insonia</td>
+      <td class="plants-cell">238 281 304 312 348 407 535 147</td>
+    </tr>
+    <tr>
+      <td class="id-cell">553</td>
+      <td class="nom-cell">Insuficiencia cerebral</td>
+      <td class="plants-cell">36</td>
+    </tr>
+    <tr>
+      <td class="id-cell">554</td>
+      <td class="nom-cell">Insuficiencia congestiva</td>
+      <td class="plants-cell">425</td>
+    </tr>
+    <tr>
+      <td class="id-cell">555</td>
+      <td class="nom-cell">insuficiencia hepatica</td>
+      <td class="plants-cell">165 342 515</td>
+    </tr>
+    <tr>
+      <td class="id-cell">556</td>
+      <td class="nom-cell">Intestino preso</td>
+      <td class="plants-cell">332 449 257</td>
+    </tr>
+    <tr>
+      <td class="id-cell">557</td>
+      <td class="nom-cell">intoxicacoes</td>
+      <td class="plants-cell">475 155</td>
+    </tr>
+    <tr>
+      <td class="id-cell">558</td>
+      <td class="nom-cell">Intoxicacoes cronicas</td>
+      <td class="plants-cell">376</td>
+    </tr>
+    <tr>
+      <td class="id-cell">559</td>
+      <td class="nom-cell">intranquilidade</td>
+      <td class="plants-cell">525</td>
+    </tr>
+    <tr>
+      <td class="id-cell">560</td>
+      <td class="nom-cell">Irregularidades menstruais</td>
+      <td class="plants-cell">185</td>
+    </tr>
+    <tr>
+      <td class="id-cell">561</td>
+      <td class="nom-cell">Irritacao da pele</td>
+      <td class="plants-cell">404</td>
+    </tr>
+    <tr>
+      <td class="id-cell">562</td>
+      <td class="nom-cell">Irritacao das vias respiratorias</td>
+      <td class="plants-cell">348</td>
+    </tr>
+    <tr>
+      <td class="id-cell">563</td>
+      <td class="nom-cell">Irritacao de ovario</td>
+      <td class="plants-cell">279</td>
+    </tr>
+    <tr>
+      <td class="id-cell">564</td>
+      <td class="nom-cell">Irritacao dos olhos</td>
+      <td class="plants-cell">147 427 40</td>
+    </tr>
+    <tr>
+      <td class="id-cell">565</td>
+      <td class="nom-cell">Irritacao da pele</td>
+      <td class="plants-cell">185</td>
+    </tr>
+    <tr>
+      <td class="id-cell">566</td>
+      <td class="nom-cell">Irritacaoes vaginais</td>
+      <td class="plants-cell">222</td>
+    </tr>
+    <tr>
+      <td class="id-cell">567</td>
+      <td class="nom-cell">Lactacao</td>
+      <td class="plants-cell">332</td>
+    </tr>
+    <tr>
+      <td class="id-cell">568</td>
+      <td class="nom-cell">Lacatacao insuficiente</td>
+      <td class="plants-cell">336 131</td>
+    </tr>
+    <tr>
+      <td class="id-cell">569</td>
+      <td class="nom-cell">laringite</td>
+      <td class="plants-cell">257 285 421 475 124</td>
+    </tr>
+    <tr>
+      <td class="id-cell">570</td>
+      <td class="nom-cell">laxante</td>
+      <td class="plants-cell">105 117 182 202 203 209 220 222 254 261 267 268 268 274 278 279 311 348 360 378 404 406 427 450 497 537 48</td>
+    </tr>
+    <tr>
+      <td class="id-cell">571</td>
+      <td class="nom-cell">Leishmaniose</td>
+      <td class="plants-cell">223</td>
+    </tr>
+    <tr>
+      <td class="id-cell">572</td>
+      <td class="nom-cell">Leishmaniose cutanea</td>
+      <td class="plants-cell">326</td>
+    </tr>
+    <tr>
+      <td class="id-cell">573</td>
+      <td class="nom-cell">lendias</td>
+      <td class="plants-cell">121</td>
+    </tr>
+    <tr>
+      <td class="id-cell">574</td>
+      <td class="nom-cell">Lepras</td>
+      <td class="plants-cell">56 83 495 39</td>
+    </tr>
+    <tr>
+      <td class="id-cell">575</td>
+      <td class="nom-cell">Lesoes cutanées</td>
+      <td class="plants-cell">479</td>
+    </tr>
+    <tr>
+      <td class="id-cell">576</td>
+      <td class="nom-cell">leucemia</td>
+      <td class="plants-cell">174</td>
+    </tr>
+    <tr>
+      <td class="id-cell">577</td>
+      <td class="nom-cell">leucorreia</td>
+      <td class="plants-cell">212 222 279 285 291 294 316 337 350 374 390 124</td>
+    </tr>
+    <tr>
+      <td class="id-cell">578</td>
+      <td class="nom-cell">Linfatismo</td>
+      <td class="plants-cell">454</td>
+    </tr>
+    <tr>
+      <td class="id-cell">579</td>
+      <td class="nom-cell">Litiges pulmonar</td>
+      <td class="plants-cell">113</td>
+    </tr>
+    <tr>
+      <td class="id-cell">580</td>
+      <td class="nom-cell">Lombriga</td>
+      <td class="plants-cell">355 397 49</td>
+    </tr>
+    <tr>
+      <td class="id-cell">581</td>
+      <td class="nom-cell">Luxacao</td>
+      <td class="plants-cell">499</td>
+    </tr>
+    <tr>
+      <td class="id-cell">582</td>
+      <td class="nom-cell">Ma digestion</td>
+      <td class="plants-cell">138 330 421 81</td>
+    </tr>
+    <tr>
+      <td class="id-cell">583</td>
+      <td class="nom-cell">machucados</td>
+      <td class="plants-cell">487 439</td>
+    </tr>
+    <tr>
+      <td class="id-cell">584</td>
+      <td class="nom-cell">Ma digestao</td>
+      <td class="plants-cell">468 407</td>
+    </tr>
+    <tr>
+      <td class="id-cell">585</td>
+      <td class="nom-cell">Malaria</td>
+      <td class="plants-cell">122 167 172 259 307 333 347 416 455 455 459 490 492 538 107</td>
+    </tr>
+    <tr>
+      <td class="id-cell">586</td>
+      <td class="nom-cell">Males da boca</td>
+      <td class="plants-cell">455</td>
+    </tr>
+    <tr>
+      <td class="id-cell">587</td>
+      <td class="nom-cell">Males da garganta</td>
+      <td class="plants-cell">455</td>
+    </tr>
+    <tr>
+      <td class="id-cell">588</td>
+      <td class="nom-cell">Males do coracao</td>
+      <td class="plants-cell">337</td>
+    </tr>
+    <tr>
+      <td class="id-cell">589</td>
+      <td class="nom-cell">Males do estomago</td>
+      <td class="plants-cell">383 101</td>
+    </tr>
+    <tr>
+      <td class="id-cell">590</td>
+      <td class="nom-cell">Males do fig ado</td>
+      <td class="plants-cell">344</td>
+    </tr>
+    <tr>
+      <td class="id-cell">591</td>
+      <td class="nom-cell">males dos pulmoes</td>
+      <td class="plants-cell">487</td>
+    </tr>
+    <tr>
+      <td class="id-cell">592</td>
+      <td class="nom-cell">males estomacais</td>
+      <td class="plants-cell">429</td>
+    </tr>
+    <tr>
+      <td class="id-cell">593</td>
+      <td class="nom-cell">Mal estar gastrico</td>
+      <td class="plants-cell">328 161</td>
+    </tr>
+    <tr>
+      <td class="id-cell">594</td>
+      <td class="nom-cell">manchas</td>
+      <td class="plants-cell">196</td>
+    </tr>
+    <tr>
+      <td class="id-cell">595</td>
+      <td class="nom-cell">mastite</td>
+      <td class="plants-cell">443</td>
+    </tr>
+    <tr>
+      <td class="id-cell">596</td>
+      <td class="nom-cell">Mau halito</td>
+      <td class="plants-cell">338 332</td>
+    </tr>
+    <tr>
+      <td class="id-cell">597</td>
+      <td class="nom-cell">Memoria fraca</td>
+      <td class="plants-cell">330 416 238</td>
+    </tr>
+    <tr>
+      <td class="id-cell">598</td>
+      <td class="nom-cell">menopausa</td>
+      <td class="plants-cell">336 52</td>
+    </tr>
+    <tr>
+      <td class="id-cell">599</td>
+      <td class="nom-cell">menorragia</td>
+      <td class="plants-cell">374</td>
+    </tr>
+    <tr>
+      <td class="id-cell">600</td>
+      <td class="nom-cell">Menstruacao dolorosa</td>
+      <td class="plants-cell">126</td>
+    </tr>
+    <tr>
+      <td class="id-cell">601</td>
+      <td class="nom-cell">Micoses</td>
+      <td class="plants-cell">174 289 463 107</td>
+    </tr>
+    <tr>
+      <td class="id-cell">602</td>
+      <td class="nom-cell">Micoses cutâneas</td>
+      <td class="plants-cell">140</td>
+    </tr>
+    <tr>
+      <td class="id-cell">603</td>
+      <td class="nom-cell">Micoses da pele</td>
+      <td class="plants-cell">126</td>
+    </tr>
+    <tr>
+      <td class="id-cell">604</td>
+      <td class="nom-cell">miiase</td>
+      <td class="plants-cell">87</td>
+    </tr>
+    <tr>
+      <td class="id-cell">605</td>
+      <td class="nom-cell">Myorelaxante</td>
+      <td class="plants-cell">202</td>
+    </tr>
+    <tr>
+      <td class="id-cell">606</td>
+      <td class="nom-cell">Miotica</td>
+      <td class="plants-cell">473</td>
+    </tr>
+    <tr>
+      <td class="id-cell">607</td>
+      <td class="nom-cell">molesticas do figado</td>
+      <td class="plants-cell">42</td>
+    </tr>
+    <tr>
+      <td class="id-cell">608</td>
+      <td class="nom-cell">Moluscicida</td>
+      <td class="plants-cell">151 257 65</td>
+    </tr>
+    <tr>
+      <td class="id-cell">609</td>
+      <td class="nom-cell">mononucleose</td>
+      <td class="plants-cell">52</td>
+    </tr>
+    <tr>
+      <td class="id-cell">610</td>
+      <td class="nom-cell">Mordedura da cobra</td>
+      <td class="plants-cell"> 311 395 479 497 225</td>
+    </tr>
+    <tr>
+      <td class="id-cell">611</td>
+      <td class="nom-cell">Mordedura de insetos</td>
+      <td class="plants-cell">332 360 370 216</td>
+    </tr>
+    <tr>
+      <td class="id-cell">612</td>
+      <td class="nom-cell">Mordidas de inesetos</td>
+      <td class="plants-cell">311</td>
+    </tr>
+    <tr>
+      <td class="id-cell">613</td>
+      <td class="nom-cell">Muco</td>
+      <td class="plants-cell">203</td>
+    </tr>
+    <tr>
+      <td class="id-cell">614</td>
+      <td class="nom-cell">Mucosas</td>
+      <td class="plants-cell">175</td>
+    </tr>
+    <tr>
+      <td class="id-cell">615</td>
+      <td class="nom-cell">Narcotica</td>
+      <td class="plants-cell">504 508 497</td>
+    </tr>
+    <tr>
+      <td class="id-cell">616</td>
+      <td class="nom-cell">Narcotico sedativa</td>
+      <td class="plants-cell">502</td>
+    </tr>
+    <tr>
+      <td class="id-cell">617</td>
+      <td class="nom-cell">nausea</td>
+      <td class="plants-cell">337 538 162</td>
+    </tr>
+    <tr>
+      <td class="id-cell">618</td>
+      <td class="nom-cell">nefrite</td>
+      <td class="plants-cell">222 40</td>
+    </tr>
+    <tr>
+      <td class="id-cell">619</td>
+      <td class="nom-cell">Nervosismo</td>
+      <td class="plants-cell">168 238 74</td>
+    </tr>
+    <tr>
+      <td class="id-cell">620</td>
+      <td class="nom-cell">neuralgia</td>
+      <td class="plants-cell">225 297 44</td>
+    </tr>
+    <tr>
+      <td class="id-cell">621</td>
+      <td class="nom-cell">Neurastenia</td>
+      <td class="plants-cell">197 238 168</td>
+    </tr>
+    <tr>
+      <td class="id-cell">622</td>
+      <td class="nom-cell">Neurosedativa</td>
+      <td class="plants-cell">502</td>
+    </tr>
+    <tr>
+      <td class="id-cell">623</td>
+      <td class="nom-cell">neuroses</td>
+      <td class="plants-cell">475</td>
+    </tr>
+    <tr>
+      <td class="id-cell">624</td>
+      <td class="nom-cell">Nevralgia</td>
+      <td class="plants-cell">111 149 160 188 225 305 508 69</td>
+    </tr>
+    <tr>
+      <td class="id-cell">625</td>
+      <td class="nom-cell">Nevralgia dentarias</td>
+      <td class="plants-cell">418</td>
+    </tr>
+    <tr>
+      <td class="id-cell">626</td>
+      <td class="nom-cell">Obesidade</td>
+      <td class="plants-cell">97484 510 </td>
+    </tr>
+    <tr>
+      <td class="id-cell">627</td>
+      <td class="nom-cell">Obstrucaos da vésicule</td>
+      <td class="plants-cell">122</td>
+    </tr>
+    <tr>
+      <td class="id-cell">628</td>
+      <td class="nom-cell">Odontologias</td>
+      <td class="plants-cell">421</td>
+    </tr>
+    <tr>
+      <td class="id-cell">629</td>
+      <td class="nom-cell">Oftalmia cronica</td>
+      <td class="plants-cell">229</td>
+    </tr>
+    <tr>
+      <td class="id-cell">630</td>
+      <td class="nom-cell">orquite</td>
+      <td class="plants-cell">102 94</td>
+    </tr>
+    <tr>
+      <td class="id-cell">631</td>
+      <td class="nom-cell">Oxiuros</td>
+      <td class="plants-cell">397 99</td>
+    </tr>
+    <tr>
+      <td class="id-cell">632</td>
+      <td class="nom-cell">Palpitacoes</td>
+      <td class="plants-cell">310 102</td>
+    </tr>
+    <tr>
+      <td class="id-cell">633</td>
+      <td class="nom-cell">Palpitantes do coracao</td>
+      <td class="plants-cell">348 147</td>
+    </tr>
+    <tr>
+      <td class="id-cell">634</td>
+      <td class="nom-cell">Paludismo</td>
+      <td class="plants-cell">459</td>
+    </tr>
+    <tr>
+      <td class="id-cell">635</td>
+      <td class="nom-cell">Paralisias</td>
+      <td class="plants-cell">190</td>
+    </tr>
+    <tr>
+      <td class="id-cell">636</td>
+      <td class="nom-cell">Parasitas intestinais</td>
+      <td class="plants-cell">532 492</td>
+    </tr>
+    <tr>
+      <td class="id-cell">637</td>
+      <td class="nom-cell">Parasiticida</td>
+      <td class="plants-cell">491 39</td>
+    </tr>
+    <tr>
+      <td class="id-cell">638</td>
+      <td class="nom-cell">Parasitoses</td>
+      <td class="plants-cell">441</td>
+    </tr>
+    <tr>
+      <td class="id-cell">639</td>
+      <td class="nom-cell">Parkinson</td>
+      <td class="plants-cell">175</td>
+    </tr>
+    <tr>
+      <td class="id-cell">640</td>
+      <td class="nom-cell">Pedra na vesicula</td>
+      <td class="plants-cell">395</td>
+    </tr>
+    <tr>
+      <td class="id-cell">641</td>
+      <td class="nom-cell">Pedra no rins</td>
+      <td class="plants-cell">198 268 395 414 470 79</td>
+    </tr>
+    <tr>
+      <td class="id-cell">642</td>
+      <td class="nom-cell">peitoral</td>
+      <td class="plants-cell">54 168 184 283 337 35</td>
+    </tr>
+    <tr>
+      <td class="id-cell">643</td>
+      <td class="nom-cell">Perda de apetite</td>
+      <td class="plants-cell">330 338 81</td>
+    </tr>
+    <tr>
+      <td class="id-cell">644</td>
+      <td class="nom-cell">Picada de cobra</td>
+      <td class="plants-cell">172 229 254 377 419 437 439 454 472 487 508 83</td>
+    </tr>
+    <tr>
+      <td class="id-cell">645</td>
+      <td class="nom-cell">picada de insetos</td>
+      <td class="plants-cell">222 255 427 429 463 470 543 187</td>
+    </tr>
+    <tr>
+      <td class="id-cell">646</td>
+      <td class="nom-cell">picada</td>
+      <td class="plants-cell">437 427</td>
+    </tr>
+    <tr>
+      <td class="id-cell">647</td>
+      <td class="nom-cell">piolhos</td>
+      <td class="plants-cell">121 355 368 543 82</td>
+    </tr>
+    <tr>
+      <td class="id-cell">648</td>
+      <td class="nom-cell">penumonia</td>
+      <td class="plants-cell">357 475 236</td>
+    </tr>
+    <tr>
+      <td class="id-cell">649</td>
+      <td class="nom-cell">Pressao alta</td>
+      <td class="plants-cell">536</td>
+    </tr>
+    <tr>
+      <td class="id-cell">650</td>
+      <td class="nom-cell">Prevencao de estrias</td>
+      <td class="plants-cell">537</td>
+    </tr>
+    <tr>
+      <td class="id-cell">651</td>
+      <td class="nom-cell">Prisao de ventre</td>
+      <td class="plants-cell">99 102 163 227 378 449 490 97</td>
+    </tr>
+    <tr>
+      <td class="id-cell">652</td>
+      <td class="nom-cell">Problema respiratorio</td>
+      <td class="plants-cell">63</td>
+    </tr>
+    <tr>
+      <td class="id-cell">653</td>
+      <td class="nom-cell">Problema urinario</td>
+      <td class="plants-cell">63</td>
+    </tr>
+    <tr>
+      <td class="id-cell">654</td>
+      <td class="nom-cell">Problema biliares</td>
+      <td class="plants-cell">158</td>
+    </tr>
+    <tr>
+      <td class="id-cell">655</td>
+      <td class="nom-cell">Problemas cardiacas</td>
+      <td class="plants-cell">436</td>
+    </tr>
+    <tr>
+      <td class="id-cell">656</td>
+      <td class="nom-cell">Problemas circulatorios</td>
+      <td class="plants-cell">36</td>
+    </tr>
+    <tr>
+      <td class="id-cell">657</td>
+      <td class="nom-cell">Problemas de menopausa</td>
+      <td class="plants-cell">332</td>
+    </tr>
+    <tr>
+      <td class="id-cell">658</td>
+      <td class="nom-cell">Problema de pele</td>
+      <td class="plants-cell">184 463 517 </td>
+    </tr>
+    <tr>
+      <td class="id-cell">659</td>
+      <td class="nom-cell">Problemas digestivo</td>
+      <td class="plants-cell">111 330 515 78</td>
+    </tr>
+    <tr>
+      <td class="id-cell">660</td>
+      <td class="nom-cell">Problemas do aparelho urinario</td>
+      <td class="plants-cell">170</td>
+    </tr>
+    <tr>
+      <td class="id-cell">661</td>
+      <td class="nom-cell">Problemas di baço</td>
+      <td class="plants-cell">461</td>
+    </tr>
+    <tr>
+      <td class="id-cell">662</td>
+      <td class="nom-cell">Problemas do Figaro</td>
+      <td class="plants-cell">461 124</td>
+    </tr>
+    <tr>
+      <td class="id-cell">663</td>
+      <td class="nom-cell">Problema estomacaias</td>
+      <td class="plants-cell">481 111</td>
+    </tr>
+    <tr>
+      <td class="id-cell">664</td>
+      <td class="nom-cell">Problemas gastricos</td>
+      <td class="plants-cell">338 447 111</td>
+    </tr>
+    <tr>
+      <td class="id-cell">665</td>
+      <td class="nom-cell">Problemas gastrointestinais</td>
+      <td class="plants-cell">357 111</td>
+    </tr>
+    <tr>
+      <td class="id-cell">666</td>
+      <td class="nom-cell">Problemas intestinais</td>
+      <td class="plants-cell">170</td>
+    </tr>
+    <tr>
+      <td class="id-cell">667</td>
+      <td class="nom-cell">Problemas menstruais</td>
+      <td class="plants-cell">75 79 336 463 61</td>
+    </tr>
+    <tr>
+      <td class="id-cell">668</td>
+      <td class="nom-cell">Problemas neuromusculares</td>
+      <td class="plants-cell">398</td>
+    </tr>
+    <tr>
+      <td class="id-cell">669</td>
+      <td class="nom-cell">Problemas no pancreas</td>
+      <td class="plants-cell">35</td>
+    </tr>
+    <tr>
+      <td class="id-cell">670</td>
+      <td class="nom-cell">Problemas renais</td>
+      <td class="plants-cell">506</td>
+    </tr>
+    <tr>
+      <td class="id-cell">671</td>
+      <td class="nom-cell">Problemas respiratorios</td>
+      <td class="plants-cell">291 302 333 40</td>
+    </tr>
+    <tr>
+      <td class="id-cell">672</td>
+      <td class="nom-cell">Problemas urinarios</td>
+      <td class="plants-cell">395</td>
+    </tr>
+    <tr>
+      <td class="id-cell">673</td>
+      <td class="nom-cell">Prostatite</td>
+      <td class="plants-cell">79 109 188 257 65</td>
+    </tr>
+    <tr>
+      <td class="id-cell">674</td>
+      <td class="nom-cell">Protecao gastrica</td>
+      <td class="plants-cell">165</td>
+    </tr>
+    <tr>
+      <td class="id-cell">675</td>
+      <td class="nom-cell">Protetora do estomago</td>
+      <td class="plants-cell">544</td>
+    </tr>
+    <tr>
+      <td class="id-cell">676</td>
+      <td class="nom-cell">Pruridos</td>
+      <td class="plants-cell">40 73 102 117 126 141 147 149 158 163 315 397 445 517 39</td>
+    </tr>
+    <tr>
+      <td class="id-cell">677</td>
+      <td class="nom-cell">psicomotora</td>
+      <td class="plants-cell">281</td>
+    </tr>
+    <tr>
+      <td class="id-cell">678</td>
+      <td class="nom-cell">Psoriasis</td>
+      <td class="plants-cell">56 170 174 175 197 263 508 35</td>
+    </tr>
+    <tr>
+      <td class="id-cell">679</td>
+      <td class="nom-cell">purgativa</td>
+      <td class="plants-cell">61 82 136 219 220 225 260 261 255 267 277 294 355 372 377 379 397 431 439 454 461 482 497 535 54</td>
+    </tr>
+    <tr>
+      <td class="id-cell">680</td>
+      <td class="nom-cell">Purgativa drastico</td>
+      <td class="plants-cell">248</td>
+    </tr>
+    <tr>
+      <td class="id-cell">681</td>
+      <td class="nom-cell">Purificador do sangue</td>
+      <td class="plants-cell">225</td>
+    </tr>
+    <tr>
+      <td class="id-cell">682</td>
+      <td class="nom-cell">pustulas</td>
+      <td class="plants-cell">236</td>
+    </tr>
+    <tr>
+      <td class="id-cell">683</td>
+      <td class="nom-cell">queda de cabelos</td>
+      <td class="plants-cell">475 473</td>
+    </tr>
+    <tr>
+      <td class="id-cell">684</td>
+      <td class="nom-cell">quimaduras</td>
+      <td class="plants-cell">105 134 167 180 227 297 399 423 427 443 463 464 508 513 75</td>
+    </tr>
+    <tr>
+      <td class="id-cell">685</td>
+      <td class="nom-cell">Queimaduras leves</td>
+      <td class="plants-cell">40</td>
+    </tr>
+    <tr>
+      <td class="id-cell">686</td>
+      <td class="nom-cell">Radio protetor</td>
+      <td class="plants-cell">322</td>
+    </tr>
+    <tr>
+      <td class="id-cell">687</td>
+      <td class="nom-cell">raquitismo</td>
+      <td class="plants-cell">284 196</td>
+    </tr>
+    <tr>
+      <td class="id-cell">688</td>
+      <td class="nom-cell">Raquitismo infantil</td>
+      <td class="plants-cell">187</td>
+    </tr>
+    <tr>
+      <td class="id-cell">689</td>
+      <td class="nom-cell">Recales alergicas</td>
+      <td class="plants-cell">40</td>
+    </tr>
+    <tr>
+      <td class="id-cell">690</td>
+      <td class="nom-cell">Redutor de apetite</td>
+      <td class="plants-cell">183</td>
+    </tr>
+    <tr>
+      <td class="id-cell">691</td>
+      <td class="nom-cell">Reduzir inflamacoes</td>
+      <td class="plants-cell">432</td>
+    </tr>
+    <tr>
+      <td class="id-cell">692</td>
+      <td class="nom-cell">Regeneradora das células hepaticas</td>
+      <td class="plants-cell">155</td>
+    </tr>
+    <tr>
+      <td class="id-cell">693</td>
+      <td class="nom-cell">Regulador metabolico geral</td>
+      <td class="plants-cell">225</td>
+    </tr>
+    <tr>
+      <td class="id-cell">694</td>
+      <td class="nom-cell">rehidratante</td>
+      <td class="plants-cell">390</td>
+    </tr>
+    <tr>
+      <td class="id-cell">695</td>
+      <td class="nom-cell">Rejuvenescedor</td>
+      <td class="plants-cell">52</td>
+    </tr>
+    <tr>
+      <td class="id-cell">696</td>
+      <td class="nom-cell"> Relaxante da musculatura esqueletica</td>
+      <td class="plants-cell">443</td>
+    </tr>
+    <tr>
+      <td class="id-cell">697</td>
+      <td class="nom-cell">Relaxate muscular</td>
+      <td class="plants-cell"> 357 432 111</td>
+    </tr>
+    <tr>
+      <td class="id-cell">698</td>
+      <td class="nom-cell">remineralizante</td>
+      <td class="plants-cell">233</td>
+    </tr>
+    <tr>
+      <td class="id-cell">699</td>
+      <td class="nom-cell">Remover verrugas</td>
+      <td class="plants-cell">240</td>
+    </tr>
+    <tr>
+      <td class="id-cell">700</td>
+      <td class="nom-cell">reputada</td>
+      <td class="plants-cell">214</td>
+    </tr>
+    <tr>
+      <td class="id-cell">701</td>
+      <td class="nom-cell">Resfriado</td>
+      <td class="plants-cell">321 336 376 378 435 457 481 513 524 81</td>
+    </tr>
+    <tr>
+      <td class="id-cell">702</td>
+      <td class="nom-cell">Resfriado comum</td>
+      <td class="plants-cell">134</td>
+    </tr>
+    <tr>
+      <td class="id-cell">703</td>
+      <td class="nom-cell">resfriados</td>
+      <td class="plants-cell">140 141 154 160 177 178 267 275 310 316 324 337 371 468 481 532 40</td>
+    </tr>
+    <tr>
+      <td class="id-cell">704</td>
+      <td class="nom-cell">resolutiva</td>
+      <td class="plants-cell">339 140</td>
+    </tr>
+    <tr>
+      <td class="id-cell">705</td>
+      <td class="nom-cell">ressaca</td>
+      <td class="plants-cell">328</td>
+    </tr>
+    <tr>
+      <td class="id-cell">706</td>
+      <td class="nom-cell">Retencao urinaria</td>
+      <td class="plants-cell">429 77</td>
+    </tr>
+    <tr>
+      <td class="id-cell">707</td>
+      <td class="nom-cell">reumatica</td>
+      <td class="plants-cell">205 370 441 194</td>
+    </tr>
+    <tr>
+      <td class="id-cell">708</td>
+      <td class="nom-cell">Reumatismo</td>
+      <td class="plants-cell">37 40 42 72 79 94 111 117 126 130 154 160 161 166 172 182 185 187 188 192 219 225 254 285 305 330 336 339 361 368 398 404 416 423 432 439 441 468 482 487 495 497 506 510 513 524 35</td>
+    </tr>
+    <tr>
+      <td class="id-cell">709</td>
+      <td class="nom-cell">Reumatismo gotoso</td>
+      <td class="plants-cell">414</td>
+    </tr>
+    <tr>
+      <td class="id-cell">710</td>
+      <td class="nom-cell">Rinite allergica cronica</td>
+      <td class="plants-cell">522</td>
+    </tr>
+    <tr>
+      <td class="id-cell">711</td>
+      <td class="nom-cell">Rouquidao</td>
+      <td class="plants-cell">205</td>
+    </tr>
+    <tr>
+      <td class="id-cell">712</td>
+      <td class="nom-cell">sarampo</td>
+      <td class="plants-cell">234 268 40</td>
+    </tr>
+    <tr>
+      <td class="id-cell">713</td>
+      <td class="nom-cell">Sardas</td>
+      <td class="plants-cell">196 96</td>
+    </tr>
+    <tr>
+      <td class="id-cell">714</td>
+      <td class="nom-cell">sarna</td>
+      <td class="plants-cell">82 92 260 285 524 543 39</td>
+    </tr>
+    <tr>
+      <td class="id-cell">715</td>
+      <td class="nom-cell">Sarna infectada</td>
+      <td class="plants-cell">530</td>
+    </tr>
+    <tr>
+      <td class="id-cell">716</td>
+      <td class="nom-cell">seborreia</td>
+      <td class="plants-cell">475 473</td>
+    </tr>
+    <tr>
+      <td class="id-cell">717</td>
+      <td class="nom-cell">Seborreia da face</td>
+      <td class="plants-cell">117</td>
+    </tr>
+    <tr>
+      <td class="id-cell">718</td>
+      <td class="nom-cell">Seborreia do couro cabeludo</td>
+      <td class="plants-cell">117</td>
+    </tr>
+    <tr>
+      <td class="id-cell">719</td>
+      <td class="nom-cell">sedativa</td>
+      <td class="plants-cell">79 102 111 203 257 274 283 407 411 504 506 508 72</td>
+    </tr>
+    <tr>
+      <td class="id-cell">720</td>
+      <td class="nom-cell">Sifilis</td>
+      <td class="plants-cell">136 222 229 337 461 495 497 42</td>
+    </tr>
+    <tr>
+      <td class="id-cell">721</td>
+      <td class="nom-cell">Sindrome da fadiga cronica</td>
+      <td class="plants-cell">52</td>
+    </tr>
+    <tr>
+      <td class="id-cell">722</td>
+      <td class="nom-cell">sinusite</td>
+      <td class="plants-cell">229 304 529 40</td>
+    </tr>
+    <tr>
+      <td class="id-cell">723</td>
+      <td class="nom-cell">Solitaria</td>
+      <td class="plants-cell">227</td>
+    </tr>
+    <tr>
+      <td class="id-cell">724</td>
+      <td class="nom-cell">Sonifero</td>
+      <td class="plants-cell">147</td>
+    </tr>
+    <tr>
+      <td class="id-cell">725</td>
+      <td class="nom-cell">sonolencia</td>
+      <td class="plants-cell">457</td>
+    </tr>
+    <tr>
+      <td class="id-cell">726</td>
+      <td class="nom-cell">Sudorese</td>
+      <td class="plants-cell">332</td>
+    </tr>
+    <tr>
+      <td class="id-cell">727</td>
+      <td class="nom-cell">sudorifica</td>
+      <td class="plants-cell">37 69 74 83 85 140 182 202 209 217 259 283 305 309 324 340 366 366 377 416 443 468 472 473 482 488 510 524 535 538 35</td>
+    </tr>
+    <tr>
+      <td class="id-cell">728</td>
+      <td class="nom-cell">taquicardia</td>
+      <td class="plants-cell">536 468</td>
+    </tr>
+    <tr>
+      <td class="id-cell">729</td>
+      <td class="nom-cell">tendencia</td>
+      <td class="plants-cell">134</td>
+    </tr>
+    <tr>
+      <td class="id-cell">730</td>
+      <td class="nom-cell">tenia</td>
+      <td class="plants-cell">227</td>
+    </tr>
+    <tr>
+      <td class="id-cell">731</td>
+      <td class="nom-cell">Tensao nervosa</td>
+      <td class="plants-cell">337</td>
+    </tr>
+    <tr>
+      <td class="id-cell">732</td>
+      <td class="nom-cell">Tensao pre menstrual</td>
+      <td class="plants-cell">102</td>
+    </tr>
+    <tr>
+      <td class="id-cell">733</td>
+      <td class="nom-cell">tonico</td>
+      <td class="plants-cell">42 51 52 56 61 92 107 122 136 140 155 188 209 222 225 254 294 299 304 305 309 316 347 359 361 377 397 398 406 419 443 455 472 479 485 490 491 492 493 523 524 537 538 35</td>
+    </tr>
+    <tr>
+      <td class="id-cell">734</td>
+      <td class="nom-cell">Tonico capilar</td>
+      <td class="plants-cell">447</td>
+    </tr>
+    <tr>
+      <td class="id-cell">735</td>
+      <td class="nom-cell">Tonico cardiaco</td>
+      <td class="plants-cell">183</td>
+    </tr>
+    <tr>
+      <td class="id-cell">736</td>
+      <td class="nom-cell">Tonico da vesicula</td>
+      <td class="plants-cell">432</td>
+    </tr>
+    <tr>
+      <td class="id-cell">737</td>
+      <td class="nom-cell">Tonico dos nervos</td>
+      <td class="plants-cell">411 75</td>
+    </tr>
+    <tr>
+      <td class="id-cell">738</td>
+      <td class="nom-cell">Tonico estomacal</td>
+      <td class="plants-cell">532</td>
+    </tr>
+    <tr>
+      <td class="id-cell">739</td>
+      <td class="nom-cell">Tonico para o coracao</td>
+      <td class="plants-cell">159</td>
+    </tr>
+    <tr>
+      <td class="id-cell">740</td>
+      <td class="nom-cell">Torceduras</td>
+      <td class="plants-cell">439</td>
+    </tr>
+    <tr>
+      <td class="id-cell">741</td>
+      <td class="nom-cell">Torcicolo</td>
+      <td class="plants-cell">324 499 285</td>
+    </tr>
+    <tr>
+      <td class="id-cell">742</td>
+      <td class="nom-cell">tosse</td>
+      <td class="plants-cell">36 37 58 81 107 134 136 140 149 160 166 185 192 198 201 203 205 252 257 291 297 304 305 307 310 313 321 325 326 333 335 337 357 366 378 387 407 423 429 435 449 487 495 524 529 534 543 35</td>
+    </tr>
+    <tr>
+      <td class="id-cell">743</td>
+      <td class="nom-cell">Tosse catarral</td>
+      <td class="plants-cell">197</td>
+    </tr>
+    <tr>
+      <td class="id-cell">744</td>
+      <td class="nom-cell">Tosse dos cardiacos</td>
+      <td class="plants-cell">348</td>
+    </tr>
+    <tr>
+      <td class="id-cell">745</td>
+      <td class="nom-cell">Tosse irritante</td>
+      <td class="plants-cell">404</td>
+    </tr>
+    <tr>
+      <td class="id-cell">746</td>
+      <td class="nom-cell">Tosse comprida</td>
+      <td class="plants-cell">92 35</td>
+    </tr>
+    <tr>
+      <td class="id-cell">747</td>
+      <td class="nom-cell">Tosses intermitentes</td>
+      <td class="plants-cell">468</td>
+    </tr>
+    <tr>
+      <td class="id-cell">748</td>
+      <td class="nom-cell">tosses nervosas</td>
+      <td class="plants-cell">281</td>
+    </tr>
+    <tr>
+      <td class="id-cell">749</td>
+      <td class="nom-cell">Tosses rebeldes</td>
+      <td class="plants-cell">147</td>
+    </tr>
+    <tr>
+      <td class="id-cell">750</td>
+      <td class="nom-cell">tranquilizante</td>
+      <td class="plants-cell">539 83</td>
+    </tr>
+    <tr>
+      <td class="id-cell">751</td>
+      <td class="nom-cell">traqueite</td>
+      <td class="plants-cell">427</td>
+    </tr>
+    <tr>
+      <td class="id-cell">752</td>
+      <td class="nom-cell">Traumatismos</td>
+      <td class="plants-cell">192 156</td>
+    </tr>
+    <tr>
+      <td class="id-cell">753</td>
+      <td class="nom-cell">tremores</td>
+      <td class="plants-cell">536</td>
+    </tr>
+    <tr>
+      <td class="id-cell">754</td>
+      <td class="nom-cell">trombose</td>
+      <td class="plants-cell">392 44</td>
+    </tr>
+    <tr>
+      <td class="id-cell">755</td>
+      <td class="nom-cell">tuberculose</td>
+      <td class="plants-cell">87 101 113 196 236 285 425 49</td>
+    </tr>
+    <tr>
+      <td class="id-cell">756</td>
+      <td class="nom-cell">tumor</td>
+      <td class="plants-cell">97 219 294 479 482 46</td>
+    </tr>
+    <tr>
+      <td class="id-cell">757</td>
+      <td class="nom-cell">Tumor mamarios</td>
+      <td class="plants-cell">185</td>
+    </tr>
+    <tr>
+      <td class="id-cell">758</td>
+      <td class="nom-cell">Tumores uterinos</td>
+      <td class="plants-cell">515</td>
+    </tr>
+    <tr>
+      <td class="id-cell">759</td>
+      <td class="nom-cell">ulcera</td>
+      <td class="plants-cell">63 69 73 75 94 107 122 126 140 184 197 201 210 210 214 222 225 285 305 379 383 390 402 404 443 461 481 508 508 52</td>
+    </tr>
+    <tr>
+      <td class="id-cell">760</td>
+      <td class="nom-cell">Ulcers gastrica</td>
+      <td class="plants-cell">87 99 368 59</td>
+    </tr>
+    <tr>
+      <td class="id-cell">761</td>
+      <td class="nom-cell">Ulcera estomago</td>
+      <td class="plants-cell">243</td>
+    </tr>
+    <tr>
+      <td class="id-cell">762</td>
+      <td class="nom-cell">Ucelra no intestino</td>
+      <td class="plants-cell">243</td>
+    </tr>
+    <tr>
+      <td class="id-cell">763</td>
+      <td class="nom-cell">Unlecra varicosa</td>
+      <td class="plants-cell">158</td>
+    </tr>
+    <tr>
+      <td class="id-cell">764</td>
+      <td class="nom-cell">Ulceracoes da garganta</td>
+      <td class="plants-cell">184</td>
+    </tr>
+    <tr>
+      <td class="id-cell">765</td>
+      <td class="nom-cell">Ulceras bucais</td>
+      <td class="plants-cell">40</td>
+    </tr>
+    <tr>
+      <td class="id-cell">766</td>
+      <td class="nom-cell">Ulceras cutaneas</td>
+      <td class="plants-cell">510</td>
+    </tr>
+    <tr>
+      <td class="id-cell">767</td>
+      <td class="nom-cell">Ulceras da boca</td>
+      <td class="plants-cell">280 56</td>
+    </tr>
+    <tr>
+      <td class="id-cell">768</td>
+      <td class="nom-cell">Ulceras de pele</td>
+      <td class="plants-cell">441 277</td>
+    </tr>
+    <tr>
+      <td class="id-cell">769</td>
+      <td class="nom-cell">Ulceras externas</td>
+      <td class="plants-cell">192</td>
+    </tr>
+    <tr>
+      <td class="id-cell">770</td>
+      <td class="nom-cell">Ulceras gangrenosas</td>
+      <td class="plants-cell">199</td>
+    </tr>
+    <tr>
+      <td class="id-cell">771</td>
+      <td class="nom-cell">Ulceras gastricas</td>
+      <td class="plants-cell">466 210</td>
+    </tr>
+    <tr>
+      <td class="id-cell">772</td>
+      <td class="nom-cell">Ulceras internas</td>
+      <td class="plants-cell">479</td>
+    </tr>
+    <tr>
+      <td class="id-cell">773</td>
+      <td class="nom-cell">ulceras pepticas</td>
+      <td class="plants-cell">427</td>
+    </tr>
+    <tr>
+      <td class="id-cell">774</td>
+      <td class="nom-cell">Ulceras purulentes</td>
+      <td class="plants-cell">532</td>
+    </tr>
+    <tr>
+      <td class="id-cell">775</td>
+      <td class="nom-cell">Ulceras varicosas</td>
+      <td class="plants-cell">185</td>
+    </tr>
+    <tr>
+      <td class="id-cell">776</td>
+      <td class="nom-cell">uretrite</td>
+      <td class="plants-cell">151</td>
+    </tr>
+    <tr>
+      <td class="id-cell">777</td>
+      <td class="nom-cell">urticaria</td>
+      <td class="plants-cell">397 510 147</td>
+    </tr>
+    <tr>
+      <td class="id-cell">778</td>
+      <td class="nom-cell">vaginites</td>
+      <td class="plants-cell">59</td>
+    </tr>
+    <tr>
+      <td class="id-cell">779</td>
+      <td class="nom-cell">Varizes</td>
+      <td class="plants-cell">464 441</td>
+    </tr>
+    <tr>
+      <td class="id-cell">780</td>
+      <td class="nom-cell">vasoconstritora</td>
+      <td class="plants-cell">537</td>
+    </tr>
+    <tr>
+      <td class="id-cell">781</td>
+      <td class="nom-cell">vasodilatador</td>
+      <td class="plants-cell">302 363 522 90</td>
+    </tr>
+    <tr>
+      <td class="id-cell">782</td>
+      <td class="nom-cell">Ventosidade</td>
+      <td class="plants-cell">152</td>
+    </tr>
+    <tr>
+      <td class="id-cell">783</td>
+      <td class="nom-cell">Vermelhidao</td>
+      <td class="plants-cell">163 147</td>
+    </tr>
+    <tr>
+      <td class="id-cell">784</td>
+      <td class="nom-cell">Vermes</td>
+      <td class="plants-cell">532</td>
+    </tr>
+    <tr>
+      <td class="id-cell">785</td>
+      <td class="nom-cell">Vermes intestinais</td>
+      <td class="plants-cell">122 101</td>
+    </tr>
+    <tr>
+      <td class="id-cell">786</td>
+      <td class="nom-cell">Vermicida</td>
+      <td class="plants-cell">441 56</td>
+    </tr>
+    <tr>
+      <td class="id-cell">787</td>
+      <td class="nom-cell">Vermifuga</td>
+      <td class="plants-cell">75 122 161 196 198 203 236 274 346 355 371 397 443 493 504 508 522 532 49</td>
+    </tr>
+    <tr>
+      <td class="id-cell">788</td>
+      <td class="nom-cell">Verminose</td>
+      <td class="plants-cell">124 203 231 283 338 387 387 477 44</td>
+    </tr>
+    <tr>
+      <td class="id-cell">789</td>
+      <td class="nom-cell">Verrugas</td>
+      <td class="plants-cell">431 511 404</td>
+    </tr>
+    <tr>
+      <td class="id-cell">790</td>
+      <td class="nom-cell">vertigens</td>
+      <td class="plants-cell">304</td>
+    </tr>
+    <tr>
+      <td class="id-cell">791</td>
+      <td class="nom-cell">Vesicatoria</td>
+      <td class="plants-cell">94</td>
+    </tr>
+    <tr>
+      <td class="id-cell">792</td>
+      <td class="nom-cell">vomitiva</td>
+      <td class="plants-cell">96 277 321 338 439 67</td>
+    </tr>
+    <tr>
+      <td class="id-cell">793</td>
+      <td class="nom-cell">Vulneraria</td>
+      <td class="plants-cell">156 174 243 278 279 445</td>
+    </tr>
+    <tr class="lastRow">
+      <td class="id-cell">794</td>
+      <td class="nom-cell">Xeroftalmia</td>
+      <td class="plants-cell">205</td>
+    </tr>
+  </tbody>
+</table>
