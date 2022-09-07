@@ -1,0 +1,18 @@
+<%= @symptom.nom %>
+<%= @symptom.id %>
+<br>
+<% @healings.each do |healing| %>
+<%= healing %>
+<% end %>
+<br>
+<h2>Pour soigner cette maladie, utilisez:</h2>
+<% @number_plant.each do |plant| %>
+<p><%= plant.number %> - <%= link_to plant.nom_scientifique, plant_path(plant) %></p>
+<% end %>
+
+<p>A SAVOIR:
+N'utilisez pas les plantes sans savoir comment: téléchargez notre guide des
+plantes médicinales du Brésil.
+Prenez soin de savoir quelle partie de la plante sera utilisée,
+et découvrez les recettes dans notre guide des plantes médicinales du Brésil.
+</p>

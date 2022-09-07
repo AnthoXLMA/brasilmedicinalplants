@@ -1,0 +1,18 @@
+<%= @plant.nom_scientifique %>
+<%= @plant_number %>
+
+<h1>Liste des symptomes que cette plante guérit</h1>
+<br>
+
+<% @recipes.each do |symptom| %>
+<%= link_to symptom.nom, symptom_path(symptom.id) %>
+<% end %>
+
+<br>
+ICI la liste des recipes<br>
+<% @index.each do |i| %>
+<% if i.plants.split.include?(@plant_number) == true %>
+    <p><%= link_to i.nom, symptom_path(i.id) %><p>
+    <% else %>
+  <% end %>
+<% end %>
