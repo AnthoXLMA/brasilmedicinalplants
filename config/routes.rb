@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 root to: "pages#home"
 get "/contact" => "pages#contact"
 get "/about" => "pages#about"
+get "/plants/download_pdf"
 
 resources :plants, only:  [:index, :show]
 resources :symptoms, only:  [:index, :show]
