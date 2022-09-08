@@ -5,6 +5,12 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+puts "cleaning DB..."
+Tipo.delete_all
+Tratamento.delete_all
+Symptom.delete_all
+Plant.delete_all
+
 puts 'Creating Plants...'
 @filepath = "./db/fixtures/plant.json"
 @serialized_plants = File.read(@filepath)

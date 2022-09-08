@@ -1,7 +1,6 @@
 class PlantsController < ApplicationController
   skip_before_action :authenticate_user!
   # before_action :set_plant, only: [:show]
-
   require 'open-uri'
   require 'nokogiri'
   require 'csv'
@@ -29,15 +28,20 @@ class PlantsController < ApplicationController
     @number_plant = Symptom.where(plants: @plant_number)
   end
 
-
-    IMAGES_PATH = File.join(Rails.root, "public")
-  def download
-    send_file(File.join(IMAGES_PATH, "laplantedusiecle.rb"))
+  def download_pdf
+  send_file(
+    "#{Rails.root}/db/plants_index/PDF_CV_linkedin.pdf",
+    filename: "plant_info.pdf",
+    type: "application/pdf"
+  )
+    # @file = File.open(Rails.root.join('db/plants_index/plant_info.pdf'))
+    # @plant = Plant.last
+    # @plant.file.attach(io: file, filename: 'plant_info.pdf')
   end
 
-  def download(file)
-    send_file(Rails.root.join('app' , 'assets', 'images', 'laplantedusiecle.rb'))
-  end
+  # def download(file)
+  #   send_file(Rails.root.join('app' , 'assets', 'images', 'laplantedusiecle.rb'))
+  # end
 
   def plant_infos
     @plant = Plant.find(params[:id])
