@@ -1,0 +1,6 @@
+<div class='container-home'>
+  <h1>Especies</h1>
+  <% @especies.each do |especie| %>
+  <%= link_to especie.especie, tipo_path(especie) %>
+  <% end %>
+</div>

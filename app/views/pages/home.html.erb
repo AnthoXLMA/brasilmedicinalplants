@@ -1,9 +1,27 @@
-<div class='container' style="padding-top:100px;">
+<p>
+<%= @tipos.count  %> especies
+<%= @plants.count %> plantas
+<%= @symptoms.count %> sintomas
+</p>
+<div class='container-home'>
+  <h1>Especies</h1>
+  <% @tipos.each do |especie| %>
+  <%= link_to especie.especie, tipo_path(especie) %>
+  <% end %>
+</div>
+<div class='container-home'>
+  <h1>Plantas</h1>
   <% @plants.each do |plant| %>
   <%= link_to plant.nom_scientifique, plant_path(plant) %>
   <% end %>
 </div>
-
+<div class='container-home'>
+ <h1>Sintomas</h1>
+  <% @symptoms.each do |symptom| %>
+  <%= link_to symptom.nom, symptom_path(symptom) %>
+  <% end %>
+</div>
+<div class='container-home'>
 <table>
   <thead>
     <tr>
@@ -3985,3 +4003,4 @@
     </tr>
   </tbody>
 </table>
+</div>

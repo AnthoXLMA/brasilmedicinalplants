@@ -1,6 +1,6 @@
 class SymptomsController < ApplicationController
   skip_before_action :authenticate_user!
-  before_action :set_symptom, only: [:index, :show]
+  before_action :set_symptom, only: [:show]
 
   require 'open-uri'
   require 'nokogiri'
