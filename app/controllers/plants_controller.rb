@@ -1,6 +1,6 @@
 class PlantsController < ApplicationController
   skip_before_action :authenticate_user!
-  before_action :set_plant, only: [:show]
+  # before_action :set_plant, only: [:show]
 
   require 'open-uri'
   require 'nokogiri'
@@ -8,6 +8,8 @@ class PlantsController < ApplicationController
 
   def index
     @plants = Plant.all
+    @symptoms = Symptom.all
+    @tipos = Tipo.all
   end
 
   def show
@@ -25,7 +27,24 @@ class PlantsController < ApplicationController
     end
     @recipes      = @symptoms.where(plants: "#{@a.split}")
     @number_plant = Symptom.where(plants: @plant_number)
-    # @recipses = @symptoms.where(plants: '/#{@plant_number}/')
+  end
+
+
+    IMAGES_PATH = File.join(Rails.root, "public")
+  def download
+    send_file(File.join(IMAGES_PATH, "laplantedusiecle.rb"))
+  end
+
+  def download(file)
+    send_file(Rails.root.join('app' , 'assets', 'images', 'laplantedusiecle.rb'))
+  end
+
+  def plant_infos
+    @plant = Plant.find(params[:id])
+    @plant_info_doc = "./plants/plant_infos.html.erb"
+    @serialized_doc = File.read(@plant_info_doc)
+    @document = Document.find(params[:id])
+    send_data @document.file.read, filename: @document.name
   end
 
   private

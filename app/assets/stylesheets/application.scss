@@ -13,3 +13,8 @@
  *= require_tree .
  *= require_self
  */
+// @import "bootstrap/scss/bootstrap";
+// @import "../config/fonts";
+// @import "../stylesheets/home";
+@import "../stylesheets/navbar/navbar";
+@import "../stylesheets/container/container";
