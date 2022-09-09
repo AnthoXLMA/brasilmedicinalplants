@@ -1,6 +1,7 @@
 class PlantsController < ApplicationController
-  skip_before_action :authenticate_user!
+  before_action :authenticate_user!, only: [:download_pdf]
   # before_action :set_plant, only: [:show]
+  # before_action :set_user, only: [:download_pdf]
   require 'open-uri'
   require 'nokogiri'
   require 'csv'
@@ -29,19 +30,22 @@ class PlantsController < ApplicationController
   end
 
   def download_pdf
-  send_file(
-    "#{Rails.root}/db/plants_index/PDF_CV_linkedin.pdf",
-    filename: "plant_info.pdf",
+  # @user = User.new
+  # respond_to do |format|
+  #     if @user.save
+  #         format.html { redirect_to user_url(@user), notice: "User was successfully created." }
+  #         format.json { render :show, status: :created, location: @user }
+  #         UserMailer.with(user: @user).welcome_email.deliver_now
+  #     else
+  #       format.html { render :new, status: :unprocessable_entity }
+  #       format.json { render json: @user.errors, status: :unprocessable_entity }
+  #     end
+  #   end
+  send_file("#{Rails.root}/db/plants_index/PDF_CV_linkedin.pdf",
+    filename: "PDF_CV_linkedin.pdf",
     type: "application/pdf"
   )
-    # @file = File.open(Rails.root.join('db/plants_index/plant_info.pdf'))
-    # @plant = Plant.last
-    # @plant.file.attach(io: file, filename: 'plant_info.pdf')
   end
-
-  # def download(file)
-  #   send_file(Rails.root.join('app' , 'assets', 'images', 'laplantedusiecle.rb'))
-  # end
 
   def plant_infos
     @plant = Plant.find(params[:id])
@@ -60,4 +64,13 @@ class PlantsController < ApplicationController
   def plant_params
     params.require(:plant).permit(:number, :nom_scientifique)
   end
+
+  # def set_user
+  #   @user = User.find(params[:id])
+  # end
+
+  # # Only allow a list of trusted parameters through.
+  # def user_params
+  #   params.require(:user).permit(:name, :email, :login)
+  # end
 end

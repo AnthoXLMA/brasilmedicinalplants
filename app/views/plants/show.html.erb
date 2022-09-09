@@ -1,16 +1,35 @@
-<h1><%= @plant.nom_scientifique %></h1>
-<h2><%= @plant_number %></h2>
-<a><%= @plant.noms_populaires %></a>
-<h1>Sintomas</h1>
-<p>
-  <% @index.each do |i| %>
-  <% if i.plants.split.include?(@plant_number) == true %>
-      <p><%= link_to i.nom, symptom_path(i.id) %><p>
-      <% else %>
-    <% end %>
-  <% end %>
-</p>
+<div class="container-plant">
+  <div class="container-in-block">
+    <h1><%= @plant.nom_scientifique %></h1>
+    <h2><%= @plant_number %></h2>
+    <a><%= @plant.noms_populaires %></a>
+    <h1>Sintomas</h1>
+    <p>
+      <% @index.each do |i| %>
+      <% if i.plants.split.include?(@plant_number) == true %>
+          <p><%= link_to i.nom, symptom_path(i.id) %></p>
 
-<%= link_to "voir plus sur la plante", plant_url(@plant.id) %>
-<!-- <a href="plant_info.pdf" download>PDF</a> -->
+        <% end %>
+      <% end %>
+    </p>
+  </div>
+  <div class="container-form">
+      <h3>Téléchargez la fiche de cette plante</h3>
+    <form>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Nome</label>
+      <input type="nom" class="form-control" id="exampleInputNom1" placeholder="Nom">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Email</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+      <br><small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <button type="submit" class="btn btn-primary">
+      <%= link_to 'Acesso ao nosso guia das plantas medicinais', plant_plantcard_path(@plant.id) %>
+      </button>
+    </form>
+  </div>
+</div>
+<!--<%= link_to "voir plus sur la plante", plant_url(@plant.id) %> -->
 <%= link_to 'Download PDF', plants_download_pdf_url %>
