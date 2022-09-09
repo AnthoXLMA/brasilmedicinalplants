@@ -1,5 +1,5 @@
 class TiposController < ApplicationController
-  skip_before_action :authenticate_user!
+
   def index
     @especies = Tipo.all
   end

@@ -1,0 +1,17 @@
+<%= simple_form_for(@user, :url => users_trial_signup_submit_path(@user)) do |f| %>
+        <%= f.error_notification %>
+        <div class="form-inputs">
+          <%= f.fields_for :plants do |u| %>
+          <%= u.text_field :name, placeholder: "What's your name'",
+                      required: true,
+                      input_html: { autocomplete: "name" } %>
+          <%= u.text_field :email,
+                      required: true,
+                      autofocus: true,
+                      input_html: { autocomplete: "email" }%>
+        </div>
+        <% end %>
+        <div class="form-actions">
+          <%= f.button :submit, 'Download PDF', plants_download_pdf_url %>
+        </div>
+      <% end %>

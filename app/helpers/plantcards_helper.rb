@@ -1,0 +1,2 @@
+module PlantcardsHelper
+end
