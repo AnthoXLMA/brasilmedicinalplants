@@ -9,9 +9,9 @@ Rails.application.routes.draw do
   # get 'users/trial_signup', to: 'users#trial_signup'
   # post 'users/trial_signup_submit', to: 'users#trial_signup_submit'
 
-  resources :plants, only: [:index, :show] do
+  resources :plants, only: [:index, :show]
     resources :plantcards, only: [:show]
-  end
+
   resources :symptoms, only: [:index, :show]
   resources :tratamentos, only: [:index, :show]
   resources :tipos, only: [:index, :show]

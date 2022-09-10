@@ -5,7 +5,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   after_create :send_welcome_email
-  after_create :download
+  # after_create :after_sign_up_path_for!
   # has_many :plants
   # accepts_nested_attributes_for :plants
 
@@ -13,9 +13,5 @@ class User < ApplicationRecord
 
   def send_welcome_email
     UserMailer.welcome_email(self).deliver_now
-  end
-
-  def download
-    UserMailer.file_loading(self).deliver_now
   end
 end

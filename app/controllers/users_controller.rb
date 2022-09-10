@@ -19,22 +19,14 @@ class UsersController < ApplicationController
   def edit
   end
 
-  def trial_signup_submit
-    @user = User.new(params[:user])
-    if @user.save
-      redirect_to 'plants', notice: 'Ok! Your account was created!'
-    else
-      render :new
-    end
-  end
-
   # POST /users or /users.json
   def create
+    @plants = Plant.all
     @user = User.new(user_params)
 
     respond_to do |format|
       if @user.save
-        format.html { redirect_to user_url(@user), notice: "User was successfully created." }
+        format.html { redirect_to plants(@plants), notice: "User was successfully created." }
         format.json { render :show, status: :created, location: @user }
         UserMailer.with(user: @user).welcome_email.deliver_now
       else
