@@ -13,10 +13,14 @@
   <body>
     <%= render 'shared/navbar' %>
     <%= link_to "Home", root_path %>
-    <%= link_to "Especies", tipos_path %>
-    <%= link_to "Plantas", plants_path %>
     <%= link_to "Sintomas", symptoms_path %>
+    <%= link_to "Plantas", plants_path %>
+    <%= link_to "Especies", tipos_path %>
     <%= link_to "Usos", tratamentos_path %>
+      <% if user_signed_in? %>
+      <p><%= "You are online" %></p>
+      <% else %>
+      <% end %>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
     <%= yield %>

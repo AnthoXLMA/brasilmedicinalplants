@@ -25,11 +25,16 @@
       <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
       <br><small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
     </div>
-    <button type="submit" class="btn btn-primary">
-      <%= link_to 'Acesso ao nosso guia das plantas medicinais', plant_plantcard_path(@plant.id) %>
-      </button>
+      <% if user_signed_in? %>
+        <button type="submit" class="btn btn-primary">
+          <%= link_to 'See more', plantcard_path(@plant.id) %>
+        </button>
+        <% else %>
+        <button type="submit" class="btn btn-primary">
+          <%= link_to 'Acesso ao nosso guia das plantas medicinais', new_user_registration_path %>
+        </button>
+      <% end %>
     </form>
   </div>
 </div>
-<!--<%= link_to "voir plus sur la plante", plant_url(@plant.id) %> -->
-<%= link_to 'Download PDF', plants_download_pdf_url %>
+  <%= link_to 'Download PDF', plants_download_pdf_url %>

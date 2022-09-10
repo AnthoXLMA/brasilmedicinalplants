@@ -1,0 +1,13 @@
+<div class="container-home">
+  <h1><%= @especie.especie %></h1>
+  <div class="container-cards">
+    <% @these_plants.each do |this_plant| %>
+    <div class="cards">
+      <%= this_plant.nom_scientifique %>
+    </div>
+    <% end %>
+  </div>
+<h1><%= link_to 'Back to Especies Index', tipos_path %></h1>
+</div>
+
+

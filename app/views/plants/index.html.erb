@@ -1,9 +1,12 @@
 <div class='container-home'>
   <h1>Plantas</h1>
-  <% @plants.each do |plant| %>
-  <%= link_to plant.nom_scientifique, plant_path(plant) %>
-  <% end %>
-</div>
+  <div class="container-cards">
+    <% @plants.each do |plant| %>
+      <div class="cards">
+        <%= link_to plant.nom_scientifique, plant_path(plant) %>
+      </div>
+    <% end %>
+  </div>
 <table>
   <thead>
     <tr>

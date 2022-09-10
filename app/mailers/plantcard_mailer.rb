@@ -5,11 +5,11 @@ class PlantcardMailer < ApplicationMailer
   #
   #   en.plantcard_mailer.loading_confirmation.subject
   #
-  def loading_confirmation
-    @plantcard = plantcard
-    mail(
-      to: @plantcard.user.email,
-      subject: "PlantCard, #{plantcard.title} loaded!"
-     )
-  end
+  # def loading_confirmation
+  #   @plantcard = plantcard
+  #   mail(
+  #     to: @plantcard.user.email,
+  #     subject: "PlantCard, #{plantcard.title} loaded!"
+  #    )
+  # end
 end

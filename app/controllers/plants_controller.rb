@@ -13,6 +13,7 @@ class PlantsController < ApplicationController
   end
 
   def show
+    @user = current_user
     @plant      = Plant.find(params[:id])
     @all_plants = Plant.all
     @symptoms   = Symptom.all
@@ -30,17 +31,6 @@ class PlantsController < ApplicationController
   end
 
   def download_pdf
-  # @user = User.new
-  # respond_to do |format|
-  #     if @user.save
-  #         format.html { redirect_to user_url(@user), notice: "User was successfully created." }
-  #         format.json { render :show, status: :created, location: @user }
-  #         UserMailer.with(user: @user).welcome_email.deliver_now
-  #     else
-  #       format.html { render :new, status: :unprocessable_entity }
-  #       format.json { render json: @user.errors, status: :unprocessable_entity }
-  #     end
-  #   end
   send_file("#{Rails.root}/db/plants_index/PDF_CV_linkedin.pdf",
     filename: "PDF_CV_linkedin.pdf",
     type: "application/pdf"
