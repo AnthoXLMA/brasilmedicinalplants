@@ -7,7 +7,6 @@
   padding-top:30px;
   text-align:justify;
 }
-
 .container-plant {
   border:solid 1px grey;
   border-radius:2px;
@@ -19,13 +18,11 @@
   display:flex;
   gap:10px;
 }
-
 .container-in-block {
   width: 80%;
   background-color:#f1F1F1;
   padding:20px;
 }
-
 .container-form {
   border:solid 1px grey;
   width: 40%;
@@ -34,10 +31,18 @@
   padding:20px;
   text-align:center;
 }
-
 .container-cards {
   margin-left:auto;
   display:grid;
   grid-gap:40px;
   grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+}
+.sintomas-columns {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap:10px;
+  border:solid 1px grey;
+  width:100%;
+  padding:2px;
+  text-align:justify;
 }

@@ -23,16 +23,15 @@ class UsersController < ApplicationController
   def create
     @plants = Plant.all
     @user = User.new(user_params)
-
-    respond_to do |format|
-      if @user.save
-        format.html { redirect_to plants(@plants), notice: "User was successfully created." }
-        format.json { render :show, status: :created, location: @user }
-        UserMailer.with(user: @user).welcome_email.deliver_now
-      else
-        format.html { render :new, status: :unprocessable_entity }
-        format.json { render json: @user.errors, status: :unprocessable_entity }
-      end
+    if @user.save
+      # UserMailer.with(user: @user).welcome_email.deliver_now
+      UserMailer.welcome_email(@plantcard).deliver_now
+      redirect_to plantcard_path(@plant.id), notice: "User was successfully created."
+      # format.json { render :show, status: :created, location: @user }
+    else
+      render :new
+      # , status: :unprocessable_entity
+      # format.json { render json: @user.errors, status: :unprocessable_entity }
     end
   end
 

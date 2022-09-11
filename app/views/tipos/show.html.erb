@@ -3,7 +3,7 @@
   <div class="container-cards">
     <% @these_plants.each do |this_plant| %>
     <div class="cards">
-      <%= this_plant.nom_scientifique %>
+      <%= link_to this_plant.nom_scientifique, plant_path(this_plant) %>
     </div>
     <% end %>
   </div>

@@ -5,6 +5,7 @@ class UserMailer < ApplicationMailer
     @user = User.first
     @text = "Hello how are you?"
     @url  = 'http://plantas_brasil.com'
+    attachments['PDF_CV_linkedin.pdf'] = File.read('db/plants_index/PDF_CV_linkedin.pdf')
     mail(to: @user.email, subject: "Bonjour #{@user.email}")
   end
 

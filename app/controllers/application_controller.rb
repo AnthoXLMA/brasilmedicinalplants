@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::Base
-  # before_action :authenticate_user!
   before_action :activate_profiler
+  # before_action :authenticate_user
   # before_action :authenticate_with_http_digest
   before_action :configure_permitted_parameters, if: :devise_controller?
 
@@ -17,6 +17,12 @@ class ApplicationController < ActionController::Base
     devise_parameter_sanitizer.permit(:account_update, keys: [:name, :email, :login])
   end
 
+  protected
+
+  def authenticate_user
+    redirect_to new_user_registration_url unless user_signed_in?
+  end
+
   def user_is_logged_in
     if !session[:current_user]
         redirect_to new_user_registration_path
@@ -26,12 +32,4 @@ class ApplicationController < ActionController::Base
   def after_sign_up_path_for(resource)
     stored_location_for(resource) || plantcards_path
   end
-
-  # protected
-
-  # def configure_permitted_parameters
-  #   devise_parameter_sanitizer.for(:sign_up) do |f|
-  #     f.permit(file_attributes: [:download_pdf])
-  #   end
-  # end
 end

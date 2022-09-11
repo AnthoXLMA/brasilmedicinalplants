@@ -5,11 +5,17 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   after_create :send_welcome_email
-  # after_create :after_sign_up_path_for!
-  # has_many :plants
-  # accepts_nested_attributes_for :plants
+  after_create :send_loading
 
   private
+
+  def redirect_to_plantcard_show
+    redirect_to 'plantcard/id'
+  end
+
+  def send_loading
+    UserMailer.file_loading(self).deliver_now
+  end
 
   def send_welcome_email
     UserMailer.welcome_email(self).deliver_now
