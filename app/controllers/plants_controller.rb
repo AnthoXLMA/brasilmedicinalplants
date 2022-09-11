@@ -13,8 +13,11 @@ class PlantsController < ApplicationController
   end
 
   def show
-    @user = current_user
-    @plant      = Plant.find(params[:id])
+    @user  = current_user
+    @tipos = Tipo.all
+    @plant = Plant.find(params[:id])
+    @seed  = @plant.tipo_id
+    @result = @tipos.where(id: @seed)
     @all_plants = Plant.all
     @symptoms   = Symptom.all
     @plant_number = @plant.number

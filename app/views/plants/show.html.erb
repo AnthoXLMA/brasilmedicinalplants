@@ -1,17 +1,18 @@
 <div class="container-plant">
   <div class="container-in-block">
-    <h1><%= @plant.nom_scientifique %></h1>
-    <h2><%= @plant_number %></h2>
-    <a><%= @plant.noms_populaires %></a>
-    <h1>Sintomas</h1>
-    <p>
+  <h1><%= @plant_number %> - <%= @plant.nom_scientifique %></h1>
+  <h4>Especie</h4>
+  <p><%= @result[0].especie %></p>
+  <h4>Nomes Populares</h4>
+  <p><%= @plant.noms_populaires %></p>
+    <h2>Sintomas</h2>
+    <div class="sintomas-columns">
       <% @index.each do |i| %>
-      <% if i.plants.split.include?(@plant_number) == true %>
-          <p><%= link_to i.nom, symptom_path(i.id) %></p>
-
-        <% end %>
+        <% if i.plants.split.include?(@plant_number) == true %>
+        <%= link_to i.nom, symptom_path(i.id) %>
+          <% end %>
       <% end %>
-    </p>
+    </div>
   </div>
   <div class="container-form">
       <h3>Téléchargez la fiche de cette plante</h3>
@@ -37,4 +38,4 @@
     </form>
   </div>
 </div>
-  <%= link_to 'Download PDF', plants_download_pdf_url %>
+<%= link_to 'Download PDF', plants_download_pdf_url %>
