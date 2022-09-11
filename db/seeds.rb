@@ -8,6 +8,7 @@
 puts "cleaning DB..."
 Tratamento.delete_all
 Symptom.delete_all
+Content.delete_all
 Plantcard.delete_all
 Plant.delete_all
 Tipo.delete_all
@@ -29,20 +30,31 @@ puts 'Creating Plants...'
   @plantes << Plant.create!(number: row['number'],
     nom_scientifique: row['nom_scientifique'],
     noms_populaires: row['noms_populaires'],
-    tipo_id: row['tipo_id']
-    )
+    tipo_id: row['tipo_id'])
 end
 
 puts 'Creating PlantCards...'
-@cardspath = "./db/fixtures/plantcard.json"
+@cardspath = './db/fixtures/plantcard.json'
 @serialized_cards = File.read(@cardspath)
 @cards = JSON.parse(@serialized_cards)
 @cards.each do |c|
   Plantcard.create(title: c['title'], plant_id: c['plant_id'])
 end
 
+puts 'Creating Contents...'
+@contentpath = './db/fixtures/content.json'
+@serialized_contents = File.read(@contentpath)
+@contents = JSON.parse(@serialized_contents)
+@contenus = []
+@contents.each do |cont|
+  @contenus << Content.create!(plantcard_id: cont['plantcard_id'],
+    caracteristicas: cont['caracteristicas'],
+    usos: cont['usos']
+  )
+end
+
 puts 'Creating Symptoms...'
-@symptomspath = "./db/fixtures/symptoms.json"
+@symptomspath = './db/fixtures/symptoms.json'
 @serialized_symptoms = File.read(@symptomspath)
 @symptoms = JSON.parse(@serialized_symptoms)
 @symptoms.each do |k|
@@ -54,7 +66,7 @@ puts 'Creating Tratamentos...'
 @serialized_tratamentos = File.read(@tratamentospath)
 @tratamentos = JSON.parse(@serialized_tratamentos)
 @tratamentos.each do |t|
-  Tratamento.create(nom: t['nom'], description: t['description'],)
+  Tratamento.create(nom: t['nom'], description: t['description'])
 end
 
 puts 'Finished!'

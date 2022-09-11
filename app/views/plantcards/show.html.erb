@@ -2,5 +2,10 @@
   <div class="container-in-block">
     <h1><%= @plant.number %> - <%= @plant.nom_scientifique %></h1>
     <h2><%= @seed %> - <%= @result[0].especie %></h2>
+    <p>
+      <a><%= @content[0].caracteristicas %></a>
+      <a><%= @content[0].usos %></a>
+    </p>
+    <%= link_to 'Download PDF', plants_download_pdf_url %>
   </div>
 </div>

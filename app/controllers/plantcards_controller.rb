@@ -8,6 +8,8 @@ class PlantcardsController < ApplicationController
     @plantcard  = Plantcard.find(params[:id])
     @seed   = @plant.tipo_id
     @result = @tipos.where(id: @seed)
+    @contents = Content.all
+    @content = @contents.where(id: @plantcard)
   end
 
   private
@@ -17,6 +19,6 @@ class PlantcardsController < ApplicationController
   end
 
   def plantcard_params
-    params.require(:plantcard).permit(:plant_id)
+    params.require(:plantcard).permit(:plant_id, :title)
   end
 end
