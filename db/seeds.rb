@@ -5,12 +5,17 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-puts "cleaning DB..."
+puts "Deleting Tratamento"
 Tratamento.delete_all
+puts "Deleting Symptom"
 Symptom.delete_all
+puts "Deleting Content"
 Content.delete_all
+puts "Deleting Plantcard"
 Plantcard.delete_all
+puts "Deleting Plant"
 Plant.delete_all
+puts "Deleting Especie"
 Tipo.delete_all
 
 puts 'Creating Especies...'
@@ -49,7 +54,8 @@ puts 'Creating Contents...'
 @contents.each do |cont|
   @contenus << Content.create!(plantcard_id: cont['plantcard_id'],
     caracteristicas: cont['caracteristicas'],
-    usos: cont['usos']
+    usos: cont['usos'],
+    file_content: cont["#{Rails.root}/db/plant_contents/plant_2.pdf"]
   )
 end
 

@@ -1,4 +1,5 @@
-[{"id":1,"nom":"Abcessos","plants":"360 285 508"},
+[
+  {"id":1,"nom":"Abcessos","plants":"360 285 508"},
 {"id":2,"nom":"Abortiva","plants":"162 372 429 477 497 118"},
 {"id":3,"nom":"Acidente vascular cerebral","plants":"413"},
 {"id":4,"nom":"Acido urico","plants":"414 305"},
@@ -791,4 +792,5 @@
 {"id":791,"nom":"Vesicatoria","plants":"94"},
 {"id":792,"nom":"Vomitiva","plants":"96 277 321 338 439 67"},
 {"id":793,"nom":"Vulneraria","plants":"156 174 243 278 279 445"},
-{"id":794,"nom":"Xeroftalmia","plants":"205"}]
+{"id":794,"nom":"Xeroftalmia","plants":"205"}
+  ]

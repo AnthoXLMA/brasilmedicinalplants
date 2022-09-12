@@ -33,13 +33,6 @@ class PlantsController < ApplicationController
     @number_plant = Symptom.where(plants: @plant_number)
   end
 
-  def download_pdf
-  send_file("#{Rails.root}/db/plants_index/PDF_CV_linkedin.pdf",
-    filename: "PDF_CV_linkedin.pdf",
-    type: "application/pdf"
-  )
-  end
-
   def plant_infos
     @plant = Plant.find(params[:id])
     @plant_info_doc = "./plants/plant_infos.html.erb"

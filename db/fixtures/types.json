@@ -1,4 +1,5 @@
-[{"nom":"Aluá","description":"Bebida"},
+[
+{"nom":"Aluá","description":"Bebida"},
 {"nom":"Cataplasma","description":"Preparacao feita com farinha e agua"},
 {"nom":"Chás","description":"infusion, decoction, maceration"},
 {"nom":"Inalação","description":"vapeur d’eau chaude avec des arômes"},
@@ -9,4 +10,5 @@
 {"nom":"Maceração","description":"infusion, decoction, maceration"},
 {"nom":"Pós","description":"Préparation pharmaceutique"},
 {"nom":"Tisana","description":"Nom générique utilisée depuis l’antiquité donnée aux préparations liquides d’usage interne plus connues sous le nom de thé, infusion, décoction simple ou principalement compost."},
-{"nom":"Vinho medicinal","description":"Préparation généralement stimulante fait avec du vin rouge dont la macération dure 8 jours"}]
+{"nom":"Vinho medicinal","description":"Préparation généralement stimulante fait avec du vin rouge dont la macération dure 8 jours"}
+]

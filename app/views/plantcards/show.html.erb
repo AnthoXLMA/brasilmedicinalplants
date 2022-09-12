@@ -5,7 +5,7 @@
     <p>
       <a><%= @content[0].caracteristicas %></a>
       <a><%= @content[0].usos %></a>
+      <a><%= link_to "Télécharger le fichier PDF", plantcards_url(@plantcard) %></a>
     </p>
-    <%= link_to 'Download PDF', plants_download_pdf_url %>
   </div>
 </div>
