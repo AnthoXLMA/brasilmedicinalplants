@@ -1,10 +1,12 @@
 <div class='container-plant'>
   <div class="container-in-block">
     <h1><%= @plant.number %> - <%= @plant.nom_scientifique %></h1>
-    <h2><%= @seed %> - <%= @result[0].especie %></h2>
+    <h2><%= @result[0].especie %></h2>
     <p>
-      <a><%= @content[0].caracteristicas %></a>
-      <a><%= @content[0].usos %></a>
+      <h4>Caracteristicas gerais</h4>
+      <p><%= @content[0].caracteristicas %></p>
+      <h4>Usos</h4>
+      <p><%= @content[0].usos %></p>
       <a><%= link_to "Télécharger le fichier PDF", plantcards_url(@plantcard) %></a>
     </p>
   </div>

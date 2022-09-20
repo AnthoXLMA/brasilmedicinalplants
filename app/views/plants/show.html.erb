@@ -10,7 +10,7 @@
       <% @index.each do |i| %>
         <% if i.plants.split.include?(@plant_number) == true %>
         <%= link_to i.nom, symptom_path(i.id) %>
-          <% end %>
+        <% end %>
       <% end %>
     </div>
   </div>
