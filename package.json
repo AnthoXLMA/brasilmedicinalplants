@@ -15,3 +15,11 @@
     "webpack-dev-server": "^3"
   }
 }
+
+
+{
+  "engines": {
+    "node": "20.9.0",
+    "yarn": "1.22.19"
+  }
+}
