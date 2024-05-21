@@ -18,7 +18,7 @@
   "start": "node app.js"
   },
   "engines": {
-      "node": "20.9.0",
+      "node": "22.2.0",
       "yarn": "1.22.19"
   }
 }
