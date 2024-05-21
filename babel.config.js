@@ -80,3 +80,16 @@ module.exports = function(api) {
     ].filter(Boolean)
   }
 }
+
+
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "useBuiltIns": "entry",
+        "corejs": "3.22"
+      }
+    ]
+  ]
+}
