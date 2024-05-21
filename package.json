@@ -23,14 +23,9 @@
     "node": "20.9.0",
     "yarn": "1.22.19"
   },
-  // "babel": {
-  //   "presets": [
-  //     "./node_modules/@rails/webpacker/package/babel/preset.js"
-  //   ]
-  // },
   "babel": {
-      "presets": [
-        "@babel/preset-env"
-      ]
-    },
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
 }
