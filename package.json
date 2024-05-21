@@ -12,14 +12,13 @@
   },
   "version": "0.1.0",
   "devDependencies": {
-    "webpack-dev-server": "^3"
+    "webpack-dev-server": "^5.0.4"
   },
   "scripts": {
-  "start": "node index.js"
+    "start": "node app.js"
   },
   "engines": {
-      "node": "20.9.0",
-      "yarn": "1.22.19"
+    "node": "20.9.0",
+    "yarn": "1.22.19"
   }
 }
-
