@@ -1,6 +1,6 @@
 {
   "name": "My plantbook: Ruby",
-  "description": "A plantbook from brasil",
+  "description": "A plantbook from Brasil",
   "image": "heroku/ruby",
   "repository": "https://github.com/AnthoXLMA/brasilmedicinalplants",
   "keywords": ["ruby", "rails" ],
