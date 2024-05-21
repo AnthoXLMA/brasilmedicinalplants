@@ -24,8 +24,7 @@
     "yarn": "1.22.19"
   },
   "babel": {
-    "presets": [
+    "presets":
       "./node_modules/@rails/webpacker/package/babel/preset.js"
-    ]
   },
 }
