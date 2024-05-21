@@ -15,3 +15,12 @@
     "webpack-dev-server": "^3"
   }
 }
+
+
+  // "scripts": {
+  // "start": "node app.js"
+  // },
+  // "engines": {
+  //     "node": "22.2.0",
+  //     "yarn": "1.22.19"
+  // },
