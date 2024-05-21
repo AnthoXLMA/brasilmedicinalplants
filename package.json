@@ -16,7 +16,7 @@
     "webpack-dev-server": "^3"
   },
   "scripts": {
-    "start": "node application.js",
+    "start": "node app.json",
     "build": "webpack"
   },
   "engines": {
